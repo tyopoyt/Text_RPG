@@ -10,6 +10,7 @@ public class Room {
   private String description;
   private Character[] mobs;
   private Item[] items;
+  private Door[] doors;
 
   /**
    * 3-arg constructor for room.
@@ -17,10 +18,12 @@ public class Room {
    * @param description description of this room
    * @param mobs mobs in this room
    * @param items items in this room
+   * @param doors doors in this room
    */
-  public Room(String description, Character[] mobs, Item[] items) {
+  public Room(String description, Character[] mobs, Item[] items, Door[] doors) {
     this.description = description;
     this.mobs = mobs;
     this.items = items;
+    this.doors = doors;
   }
 }
