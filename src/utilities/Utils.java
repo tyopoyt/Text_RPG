@@ -5,7 +5,7 @@ public class Utils {
   /**
    * An enum for player race
    */
-  enum Race {
-    OGRE, HUMAN, ELF, HALFLING;
+  public enum Race {
+    OGRE, HUMAN, ELF, HALFLING, INVALID;
   }
 }
