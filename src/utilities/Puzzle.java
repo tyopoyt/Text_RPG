@@ -1,4 +1,4 @@
 package utilities;
 
-public class Puzzle {
+public abstract class Puzzle {
 }
