@@ -10,8 +10,8 @@ import static org.junit.Assert.*;
  * Tests for Shield class.
  */
 public class ShieldTest {
-  Shield accurateShield;
-  Shield inaccurateShield;
+  private Shield accurateShield;
+  private Shield inaccurateShield;
 
   @Before
   public void setUp(){

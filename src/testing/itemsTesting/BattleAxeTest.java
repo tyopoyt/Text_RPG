@@ -8,8 +8,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class BattleAxeTest {
-  BattleAxe accurateAxe;
-  BattleAxe inaccurateAxe;
+  private BattleAxe accurateAxe;
+  private BattleAxe inaccurateAxe;
 
   @Before
   public void setUp() {
