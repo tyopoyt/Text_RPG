@@ -32,7 +32,7 @@ public class Key {
    *
    * @return the description of the key
    */
-  public String getDescription(){
+  public String getDescription() {
     return description;
   }
 }
