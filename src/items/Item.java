@@ -5,9 +5,9 @@ package items;
  */
 public abstract class Item{
   private int weight;
-  private String description;
-  private boolean isWeapon;
-  private boolean isTool;
+  private final String DESCRIPTION;
+  private final boolean IS_WEAPON;
+  private final boolean IS_TOOL;
 
   /**
    * 2-arg constructor for an Item.
@@ -17,9 +17,9 @@ public abstract class Item{
    */
   public Item(int weight, String description, boolean isWeapon, boolean isTool){
     this.weight = weight;
-    this.isWeapon = isWeapon;
-    this.isTool = isTool;
-    this.description = description;
+    IS_WEAPON = isWeapon;
+    IS_TOOL = isTool;
+    DESCRIPTION = description;
   }
 
   /**
@@ -37,7 +37,7 @@ public abstract class Item{
    * @return whether or not this item is a weapon
    */
   public boolean isWeapon() {
-    return isWeapon;
+    return IS_WEAPON;
   }
 
   /**
@@ -46,13 +46,13 @@ public abstract class Item{
    * @return whether or not this item is a tool
    */
   public boolean isTool() {
-    return isTool;
+    return IS_TOOL;
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    if (!isWeapon) {
+    if (!IS_WEAPON) {
       sb.append("Item weighing: ").append(weight);
     }
     return sb.toString();
