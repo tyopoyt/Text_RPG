@@ -3,17 +3,18 @@ package items;
 /**
  * A class representing a Sword.
  */
-public class Sword extends Weapon{
+public class Sword extends Weapon {
 
   /**
-   * 4-arg constructor for a sword.
+   * 5-arg constructor for a sword.
    *
-   * @param damage this shield's damage
-   * @param weight this shield's weight
-   * @param defense this shield's defense
-   * @param acc this shield's accuracy
+   * @param damage      this sword's damage
+   * @param weight      this sword's weight
+   * @param defense     this sword's defense
+   * @param acc         this sword's accuracy
+   * @param description a description of the sword
    */
-  public Sword(int damage, int weight, int defense, int acc, String description){
+  public Sword(int damage, int weight, int defense, int acc, String description) {
     super(weight, damage, defense, acc, description, false);
   }
 }

@@ -10,12 +10,14 @@ public abstract class Weapon extends Item {
   private int accuracy;
 
   /**
-   * Constructor for Weapon class.
+   * 6-arg constructor for Weapon class.
    *
-   * @param weight   weight of the weapon
-   * @param damage   damage the weapon deals on a successful strike
-   * @param defense  defense points the weapon can block
-   * @param accuracy the accuracy of the weapon
+   * @param weight      weight of the weapon
+   * @param damage      damage the weapon deals on a successful strike
+   * @param defense     defense points the weapon can block
+   * @param accuracy    the accuracy of the weapon
+   * @param description a description of the weapon
+   * @param isTwoHanded is the weapon two-handed?
    */
   public Weapon(int weight, int damage, int defense, int accuracy, String description,
                 boolean isTwoHanded) {
