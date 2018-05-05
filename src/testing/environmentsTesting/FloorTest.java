@@ -1,6 +1,8 @@
 package testing.environmentsTesting;
 
+import environments.Floor;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -9,7 +11,15 @@ import static org.junit.Assert.*;
  */
 public class FloorTest {
 
+  Floor floor;
+
   @Before
   public void setUp() {
+    floor = new Floor();
+  }
+
+  @Test
+  public void testConstructors() {
+    assertNotNull(floor);
   }
 }
