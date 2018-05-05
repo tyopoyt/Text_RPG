@@ -46,6 +46,7 @@ public class Character {
   }
 
   //GETTERS
+
   /**
    * Accessor for name.
    *
@@ -110,6 +111,7 @@ public class Character {
   }
 
   // Experience Methods
+
   /**
    * Player earns experience.
    *
@@ -230,13 +232,12 @@ public class Character {
   public boolean dodge(Character player) {
     boolean success = false;
     if (player.getEquippedItem(1).isWeapon()) {
-      Weapon current = (Weapon)(player.getEquippedItem(1));
-      if (current.getAccuracy() >= getSpeed())
+      Weapon current = (Weapon) (player.getEquippedItem(1));
+      if (current.getAccuracy() >= getSpeed()) {
         success = false;
-      else if ((int) (Math.random() * 3) < 3)
-        success = true;
-      else
-        success = false;
+      } else {
+        success = (int) (Math.random() * 3) < 3;
+      }
     }
     return success;
   }
@@ -248,7 +249,7 @@ public class Character {
    *
    * @return raw damage done
    */
-  public int attack(){
+  public int attack() {
     int damage = 0;
     Item curItem;
     Iterator<Item> iter = equipped.iterator();
@@ -267,7 +268,7 @@ public class Character {
    * @param incomingDamage damage that is
    * @return damage that the character should take
    */
-  public int block(int incomingDamage){
+  public int block(int incomingDamage) {
     int damage = 0;
     Item curItem;
     Iterator<Item> iter = equipped.iterator();
@@ -281,7 +282,7 @@ public class Character {
   }
 
   @Override
-  public String toString(){
+  public String toString() {
     StringBuilder sb = new StringBuilder("Name: ");
     sb.append(name).append("\n---- Stats ----\nHealth: ").append(health).append("\nSpeed: ");
     sb.append(speed).append("\nLevel: ").append(level).append("\nInventory: ").append(inventory.toString());

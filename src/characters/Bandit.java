@@ -4,7 +4,9 @@ import items.Item;
 import items.Shield;
 import items.Sword;
 
-//BANDIT CHARACTER
+/**
+ * A class representing a bandit.
+ */
 public class Bandit extends Character{
   private static final Item brokenSword = new Sword(30, 0, 0, 30);
   private static final Item woodenShield = new Shield(0, 0, 5, 0);
