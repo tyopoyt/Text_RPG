@@ -6,7 +6,7 @@ import items.Item;
 /**
  * A class representing a room on a floor.
  */
-public class Room {
+public abstract class Room {
   private String description;
   private Character[] mobs;
   private Item[] items;
