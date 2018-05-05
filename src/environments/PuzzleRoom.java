@@ -8,7 +8,6 @@ import utilities.Puzzle;
  * A room with a puzzle that must be solved before advancing.
  */
 public class PuzzleRoom extends Room {
-
   private final Puzzle PUZZLE;
 
   /**
@@ -23,5 +22,15 @@ public class PuzzleRoom extends Room {
   public PuzzleRoom(String description, Character[] mobs, Item[] items, Door[] doors, Puzzle puzzle) {
     super(description, mobs, items, doors);
     PUZZLE = puzzle;
+  }
+
+
+  /**
+   * Checks to see if puzzle is solved.
+   *
+   * @return solve status
+   */
+  public boolean isSolved(){
+    return false;
   }
 }

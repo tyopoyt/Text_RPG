@@ -21,6 +21,6 @@ public class BanditTest {
 
   @Test
   public void testConstructor() {
-    assertNotNull(bandit);
+    System.out.println( bandit.toString());
   }
 }
