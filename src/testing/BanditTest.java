@@ -1,13 +1,25 @@
 package testing;
 
+import characters.Bandit;
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertNotNull;
 
 /**
  * A class to test the Bandit class.
  */
 public class BanditTest {
 
+  private Bandit bandit;
+
   @Before
   public void setUp() {
+    bandit = new Bandit();
+  }
+
+  @Test
+  public void testConstructor() {
+    assertNotNull(bandit);
   }
 }
