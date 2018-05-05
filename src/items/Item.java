@@ -17,7 +17,12 @@ public abstract class Item{
     this.weight = weight;
     this.isWeapon = isWeapon;
   }
-  
+
+  /**
+   * Accessor for weight.
+   *
+   * @return the weight of this object
+   */
   public int getWeight(){
     return weight;
   }
