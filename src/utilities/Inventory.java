@@ -71,15 +71,17 @@ public class Inventory implements Iterable<Item> {
    *
    * @return whether or not it's full
    */
-  public boolean isFull() {
+  private boolean isFull() {
+
     if (inventory != null) {
       int count = 0;
-      for (int i = 0; i < inventory.length; i++)
-        if (inventory[i] != null) { count++; }
-      if (count == size)
-        return true;
-      else
-        return false;
+      for (Item curItem : inventory) {
+        if (curItem == null) {
+          return false;
+        }
+        count++;
+      }
+      return count == size;
     } else {
       return false;
     }
