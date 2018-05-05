@@ -17,7 +17,7 @@ public abstract class Weapon extends Item {
    * @param accuracy the accuracy of the weapon
    */
   public Weapon(int weight, int damage, int defense, int accuracy) {
-    super(weight, true);
+    super(weight, true, false);
     this.damage = damage;
     this.defense = defense;
     this.accuracy = accuracy;

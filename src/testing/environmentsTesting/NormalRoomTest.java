@@ -12,5 +12,8 @@ public class NormalRoomTest {
   }
 
   @Test
+  public void testConstructors() {
+
+  }
 
 }

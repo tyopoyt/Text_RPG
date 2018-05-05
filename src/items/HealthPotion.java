@@ -15,7 +15,7 @@ public class HealthPotion extends Item
    * @param heal the amount of health this potion can restore
    */
   public HealthPotion(int heal){
-    super(0, false);
+    super(0, false, true);
     this.heal = heal;
   }
   
