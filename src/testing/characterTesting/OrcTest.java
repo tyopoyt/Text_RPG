@@ -1,4 +1,4 @@
-package testing;
+package testing.characterTesting;
 
 import characters.Orc;
 import org.junit.Before;

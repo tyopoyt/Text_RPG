@@ -1,4 +1,4 @@
-package testing;
+package testing.characterTesting;
 
 import characters.LostSoul;
 import org.junit.Before;

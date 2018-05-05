@@ -1,4 +1,4 @@
-package testing;
+package testing.characterTesting;
 
 import characters.Zombie;
 import org.junit.Before;

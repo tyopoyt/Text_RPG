@@ -1,4 +1,4 @@
-package testing;
+package testing.characterTesting;
 
 import characters.Bandit;
 import org.junit.Before;
