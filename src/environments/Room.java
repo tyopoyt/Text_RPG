@@ -2,14 +2,16 @@ package environments;
 
 import characters.Character;
 import items.Item;
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * A class representing a room on a floor.
  */
 public abstract class Room {
   private String description;
-  private Character[] mobs;
-  private Item[] items;
+  private ArrayList<Character> mobs;
+  private ArrayList<Item> items;
   private Door[] doors;
 
   /**
@@ -22,8 +24,8 @@ public abstract class Room {
    */
   public Room(String description, Character[] mobs, Item[] items, Door[] doors) {
     this.description = description;
-    this.mobs = mobs;
-    this.items = items;
+    Collections.addAll(this.mobs, mobs);
+    Collections.addAll(this.items, items);
     this.doors = doors;
   }
 }
