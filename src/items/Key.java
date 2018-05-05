@@ -4,8 +4,9 @@ public class Key extends Tool {
 
 
   /**
-   * Constructor for a key object.
+   * 2-arg constructor for a key object.
    *
+   * @param weight the weight of this Key
    * @param description Short description of the key's appearance
    */
   public Key(int weight, String description){
