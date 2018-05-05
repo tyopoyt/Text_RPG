@@ -4,21 +4,39 @@ import items.Item;
 
 import java.util.Iterator;
 
-//utilities.Inventory Class
+/**
+ * A class that represents a character's inventory
+ */
 public class Inventory implements Iterable<Item> {
   private Item[] inventory;
   private int size;
-  
-  public Inventory(int size){
+
+  /**
+   * 1-arg constructor for inventory.
+   *
+   * @param size the desired size of this inventory
+   */
+  public Inventory(int size) {
     inventory = new Item[size];
     this.size = size;
   }
-  
-  public int size(){
+
+  /**
+   * Accessor for size.
+   *
+   * @return size
+   */
+  public int size() {
     return this.size;
   }
-  
-  public void addItem(Item item){
+
+  /**
+   * Add an item to this inventory.
+   *
+   * @param item the item to add
+   * @return whether the item was successfully added
+   */
+  public boolean addItem(Item item) {
     if (!isFull()) {
       int index = -1;
       for (int i = 0; i < inventory.length; i++) {
@@ -28,24 +46,37 @@ public class Inventory implements Iterable<Item> {
         }
       }
       inventory[index] = item;
+      return true;
     } else {
       System.out.println("Your inventory is full!");
+      return false;
     }
   }
-  
-  //Returns item to room for possible later pickup
-  public Item dropItem(int index){
+
+  /**
+   * Drop an item from the player's inventory.
+   *
+   * @param index index of the item to drop
+   * @return the item to be dropped
+   */
+  public Item dropItem(int index) {
+    //TODO: actually drop the item
     Item out = inventory[index];
     inventory[index] = null;
     return out;
   }
-  
-  public boolean isFull(){
+
+  /**
+   * Determine whether or not this inventory is full.
+   *
+   * @return whether or not it's full
+   */
+  public boolean isFull() {
     if (inventory != null) {
       int count = 0;
-      for(int i = 0; i < inventory.length; i++)
-        if(inventory[i] != null){ count++; }
-      if(count == size)
+      for (int i = 0; i < inventory.length; i++)
+        if (inventory[i] != null) { count++; }
+      if (count == size)
         return true;
       else
         return false;
@@ -53,8 +84,13 @@ public class Inventory implements Iterable<Item> {
       return false;
     }
   }
-  
-  public Item[] contents(){
+
+  /**
+   * Accessor for contents.
+   *
+   * @return the contents of this inventory
+   */
+  public Item[] contents() {
     return inventory;
   }
 
@@ -91,11 +127,9 @@ public class Inventory implements Iterable<Item> {
         sb.replace(sb.lastIndexOf(","), (sb.lastIndexOf("A") + 1), " and a");
       }
     }
-
     if (sb.length() == 0) {
       sb.append("Empty!\n");
     }
-
     return sb.toString();
   }
 }
