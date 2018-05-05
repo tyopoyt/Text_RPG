@@ -16,15 +16,6 @@ public class Key {
   // GETTERS
 
   /**
-   * Getter method for KEYCODE.
-   *
-   * @return the KEYCODE corresponding to this instance of key
-   */
-  public String getCode(){
-    return KEYCODE;
-  }
-
-  /**
    * Getter for the description of the key.
    *
    * @return the description of the key
