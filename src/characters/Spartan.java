@@ -11,6 +11,6 @@ public class Spartan extends Character{
   private static final Item romanShield = new Shield(0, 0, 15, 0);
   
   public Spartan(){
-    super("characters.Spartan", 100, 100, 3, 2, 70, romanSword, romanShield);
+    super("Spartan", 100, 100, 3, 2, 70, romanSword, romanShield);
   }
 }

@@ -8,6 +8,6 @@ public class Spider extends Character{
   private static final Item bite = new Sword(10, 0, 0, 90);
   
   public Spider() {
-    super("characters.Spider", 50, 50, 2, 2, 75, bite, null);
+    super("Spider", 50, 50, 2, 2, 75, bite, null);
   }
 }

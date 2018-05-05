@@ -10,6 +10,6 @@ public class Zombie extends Character{
   private static final Item arms = new Shield(0, 0, 2, 0);
   
   public Zombie(){
-    super("characters.Zombie", 100, 100, 4, 2, 30, bite, arms);
+    super("Zombie", 100, 100, 4, 2, 30, bite, arms);
   }
 }
