@@ -1,5 +1,8 @@
 package environments;
 
+/**
+ * A class representing a dungeon through which the player will explore.
+ */
 public class Dungeon {
   private Floor[] floors;
 
