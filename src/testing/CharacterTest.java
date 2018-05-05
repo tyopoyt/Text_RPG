@@ -8,6 +8,9 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
+/**
+ * A class to test the Character class.
+ */
 public class CharacterTest
 {
 
