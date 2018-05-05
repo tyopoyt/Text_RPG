@@ -21,4 +21,8 @@ public class Floor{
    */
   public void populateRooms(){
   }
+
+  public void nextFloor(){
+    //TODO: write method to move onto next floor
+  }
 }
