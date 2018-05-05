@@ -97,4 +97,12 @@ public abstract class Weapon extends Item {
       damage = incomingDamage - getDefense();
     return damage;
   }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("Weapon weighing: ").append(super.getWeight());
+    sb.append(" with a damage of: ").append(damage);
+    return sb.toString();
+  }
 }
