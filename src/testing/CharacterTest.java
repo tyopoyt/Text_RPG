@@ -6,7 +6,7 @@ import items.Sword;
 import org.junit.Before;
 import org.junit.Test;
 
-import static junit.framework.TestCase.fail;
+import static junit.framework.TestCase.assertEquals;
 
 public class CharacterTest
 {
@@ -22,7 +22,12 @@ public class CharacterTest
 
   @Test
   public void testToString() {
-    System.out.println(character);
-    fail();
+    assertEquals("Name: Bob\n" +
+            "---- Stats ----\n" +
+            "Health: 100\n" +
+            "Speed: 10\n" +
+            "Level: 1\n" +
+            "Inventory: Empty!\n" +
+            "Equipped: A 12-damage sword and a 30-defense shield\n", character.toString());
   }
 }
