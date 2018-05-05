@@ -20,7 +20,7 @@ public class SpartanTest {
   }
 
   @Test
-  public void testConstructors() {
+  public void testConstructor() {
     assertNotNull(spartan);
   }
 }

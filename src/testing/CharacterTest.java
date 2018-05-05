@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNotNull;
 
 /**
  * A class to test the Character class.
@@ -21,6 +22,11 @@ public class CharacterTest
     Sword leftItem = new Sword(12, 12, 2, 100);
     Shield rightItem = new Shield(2, 18, 30, 100);
     character = new Character("Bob", 100, 100, 1, 12, 10, leftItem, rightItem);
+  }
+
+  @Test
+  public void testConstructors() {
+    assertNotNull(character);
   }
 
   @Test
