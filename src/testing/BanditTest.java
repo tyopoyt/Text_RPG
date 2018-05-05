@@ -4,7 +4,8 @@ import characters.Bandit;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertNotNull;
+import static junit.framework.TestCase.assertNotNull;
+
 
 /**
  * A class to test the Bandit class.
