@@ -16,11 +16,4 @@ public class Sword extends Weapon{
   public Sword(int damage, int weight, int defense, int acc, String description){
     super(weight, damage, defense, acc, description);
   }
-
-  @Override
-  public String toString() {
-    StringBuilder sb = new StringBuilder();
-    sb.append("A ").append(getDamage()).append("-damage sword");
-    return sb.toString();
-  }
 }
