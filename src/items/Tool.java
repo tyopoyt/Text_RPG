@@ -1,6 +1,19 @@
 package items;
 
-public class Tool extends Item {
+public abstract class Tool extends Item {
 
-  public Tool()
+  /**
+   * 1-arg constructor for a Tool.
+   *
+   * @param weight the tool's weight
+   */
+  public Tool(int weight) {
+    super(weight, false, true);
+  }
+
+  /**
+   * Use this tool.
+   */
+  public abstract void use();
+
 }
