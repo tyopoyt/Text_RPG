@@ -4,8 +4,9 @@ package items;
  * An abstract class representing some sort of weapon.
  */
 public abstract class Weapon extends Item {
+  private final boolean IS_TWO_HANDED;
   private int damage;
-  private int defense; //FOR Shields, SHIELD WILL COUNT AS WEAPON
+  private int defense;
   private int accuracy;
 
   /**
@@ -16,11 +17,13 @@ public abstract class Weapon extends Item {
    * @param defense  defense points the weapon can block
    * @param accuracy the accuracy of the weapon
    */
-  public Weapon(int weight, int damage, int defense, int accuracy, String description) {
+  public Weapon(int weight, int damage, int defense, int accuracy, String description,
+                boolean isTwoHanded) {
     super(weight, description, true, false);
     this.damage = damage;
     this.defense = defense;
     this.accuracy = accuracy;
+    IS_TWO_HANDED = isTwoHanded;
   }
 
   //GETTERS
@@ -50,6 +53,15 @@ public abstract class Weapon extends Item {
    */
   public int getAccuracy() {
     return accuracy;
+  }
+
+  /**
+   * Is the weapon two-handed?
+   *
+   * @return whether the weapon is two-handed
+   */
+  public boolean isTwoHanded() {
+    return IS_TWO_HANDED;
   }
 
 
