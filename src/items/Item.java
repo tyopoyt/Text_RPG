@@ -3,7 +3,7 @@ package items;
 /**
  * An class representing some item that the player may obtain.
  */
-public class Item{
+public abstract class Item{
   private int weight;
   private boolean isWeapon;
 
