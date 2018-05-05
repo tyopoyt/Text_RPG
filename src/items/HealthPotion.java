@@ -2,14 +2,21 @@ package items;
 
 import characters.Character;
 
-//POTION MASTER CLASS
+/**
+ * A class representing a health potion.
+ */
 public class HealthPotion extends Item
 {
   private int heal;
-  
-  public HealthPotion(int h){
+
+  /**
+   * 1-arg constructor for a HealthPotion.
+   *
+   * @param heal the amount of health this potion can restore
+   */
+  public HealthPotion(int heal){
     super(0, false);
-    heal = h;
+    this.heal = heal;
   }
   
   public void use(Character c){

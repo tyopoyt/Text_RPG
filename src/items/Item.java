@@ -1,10 +1,18 @@
 package items;
 
-//ITEM PARENT CLASS
+/**
+ * An class representing some item that the player may obtain.
+ */
 public class Item{
   private int weight;
   private boolean isWeapon;
-  
+
+  /**
+   * 2-arg constructor for an Item.
+   *
+   * @param weight the item's weight
+   * @param isWeapon is the item a weapon?
+   */
   public Item(int weight, boolean isWeapon){
     this.weight = weight;
     this.isWeapon = isWeapon;
