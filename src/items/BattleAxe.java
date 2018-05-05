@@ -1,6 +1,6 @@
 package items;
 
-public class BattleAxe {
+public class BattleAxe extends Weapon {
 
   /**
    * 5-arg BattleAxe Constuctor.
@@ -12,6 +12,6 @@ public class BattleAxe {
    * @param description the description of the battleaxe
    */
   public BattleAxe(int damage, int weight, int defense, int accuracy, String description) {
-
+    super(weight, damage, defense, accuracy, description, true);
   }
 }

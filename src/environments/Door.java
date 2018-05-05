@@ -23,7 +23,11 @@ public class Door {
    * @return whether the door was successfully unlocked
    */
   public boolean unlock(Key key) {
-    return isLocked = (this.key == key);
+    boolean success = this.key == key;
+
+    isLocked = !success;
+
+    return success;
   }
 
   /**
