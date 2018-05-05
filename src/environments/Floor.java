@@ -22,7 +22,10 @@ public class Floor{
   public void populateRooms(){
   }
 
-  public void nextFloor(){
+  /**
+   * Advance to the next floor.
+   */
+  public void advanceFloor(){
     //TODO: write method to move onto next floor
   }
 }
