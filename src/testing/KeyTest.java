@@ -12,10 +12,10 @@ public class KeyTest {
   }
 
   @Test
-  public void getCode() {
+  public void testGetCode() {
   }
 
   @Test
-  public void getDescription() {
+  public void testGetDescription() {
   }
 }
