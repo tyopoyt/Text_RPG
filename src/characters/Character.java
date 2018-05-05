@@ -171,6 +171,7 @@ public class Character {
    * @param obj item added
    */
   public void pickUp(Item obj) {
+    //TODO: return boolean
     inventory.addItem(obj);
   }
 

@@ -8,12 +8,12 @@ import items.Sword;
  */
 public class Slime extends Character
 {
-  private static final Item punch = new Sword(5, 0, 0, 70);
+  private static final Item PUNCH = new Sword(5, 0, 0, 70);
 
   /**
    * Default constructor for the Slime class.
    */
   public Slime(){
-    super("Slime", 25, 50, 1, 2, 20, punch, null);
+    super("Slime", 25, 50, 1, 2, 20, PUNCH, null);
   }
 }
