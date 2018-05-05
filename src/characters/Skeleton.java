@@ -9,14 +9,14 @@ import items.Sword;
  */
 public class Skeleton extends Character
 {
-  private static final Item boneSword = new Sword(7, 0, 0, 56);
-  private static final Item skinShield = new Shield(0, 0, 10, 0);
+  private static final Item BONE_SWORD = new Sword(7, 0, 0, 56);
+  private static final Item SKIN_SHIELD = new Shield(0, 0, 10, 0);
 
   /**
    * Default constructor for the Skeleton class.
    */
   public Skeleton(){
-    super("Skeleton", 75, 75, 3, 2, 50, boneSword,
-            skinShield);
+    super("Skeleton", 75, 75, 3, 2, 50, BONE_SWORD,
+            SKIN_SHIELD);
   }
 }

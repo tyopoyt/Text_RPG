@@ -7,12 +7,12 @@ import items.Sword;
  * A class representing a Lost Soul.
  */
 public class LostSoul extends Character{
-  private static final Item evilHand = new Sword(10, 0, 0, 30);
+  private static final Item EVIL_HAND = new Sword(10, 0, 0, 30);
 
   /**
    * Default constructor for the LostSoul class.
    */
   public LostSoul(){
-    super("Lost Soul", 100, 100, 4, 2, 30, evilHand, null);
+    super("Lost Soul", 100, 100, 4, 2, 30, EVIL_HAND, null);
   }
 }

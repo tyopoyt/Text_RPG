@@ -8,13 +8,13 @@ import items.Sword;
  * A class representing a bandit.
  */
 public class Bandit extends Character{
-  private static final Item brokenSword = new Sword(30, 0, 0, 30);
-  private static final Item woodenShield = new Shield(0, 0, 5, 0);
+  private static final Item BROKEN_SWORD = new Sword(30, 0, 0, 30);
+  private static final Item WOODEN_SHIELD = new Shield(0, 0, 5, 0);
 
   /**
    * Default constructor for the Bandit class.
    */
   public Bandit() {
-    super("Bandit", 80, 80, 2, 2, 75, brokenSword, woodenShield);
+    super("Bandit", 80, 80, 2, 2, 75, BROKEN_SWORD, WOODEN_SHIELD);
   }
 }

@@ -8,13 +8,13 @@ import items.Sword;
  * A class representing a Zombie.
  */
 public class Zombie extends Character{
-  private static final Item bite = new Sword(25, 0, 0, 20);
-  private static final Item arms = new Shield(0, 0, 2, 0);
+  private static final Item BITE = new Sword(25, 0, 0, 20);
+  private static final Item ARMS = new Shield(0, 0, 2, 0);
 
   /**
    * Default constructor for the Zombie class.
    */
   public Zombie(){
-    super("Zombie", 100, 100, 4, 2, 30, bite, arms);
+    super("Zombie", 100, 100, 4, 2, 30, BITE, ARMS);
   }
 }
