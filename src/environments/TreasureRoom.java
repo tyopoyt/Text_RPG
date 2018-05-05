@@ -1,6 +1,7 @@
 package environments;
 
 import items.Item;
+import characters.Character;
 
 public class TreasureRoom extends Room {
   /**
