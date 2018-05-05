@@ -7,7 +7,7 @@ import items.Sword;
  * A class representing a Ghost.
  */
 public class Ghost extends Character{
-  private static final Item EVIL_HAND = new Sword(5, 0, 0,  30);
+  private static final Item EVIL_HAND = new Sword(5, 0, 0,  30, "a spectral claw");
 
   /**
    * Default constructor for the Ghost class.

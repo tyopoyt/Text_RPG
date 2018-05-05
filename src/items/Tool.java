@@ -7,8 +7,8 @@ public abstract class Tool extends Item {
    *
    * @param weight the tool's weight
    */
-  public Tool(int weight) {
-    super(weight, false, true);
+  public Tool(int weight, String description) {
+    super(weight, description, false, true);
   }
 
   /**

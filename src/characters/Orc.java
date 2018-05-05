@@ -8,8 +8,8 @@ import items.Sword;
  * A class representing an orc.
  */
 public class Orc extends Character{
-  private static final Item ORCISH_SWORD = new Sword(15, 0, 0, 80);
-  private static final Item WOODEN_SHIELD = new Shield(0, 0, 5, 0);
+  private static final Item ORCISH_SWORD = new Sword(15, 0, 0, 80, "an Orcish sword");
+  private static final Item WOODEN_SHIELD = new Shield(0, 0, 5, 0, "a wooden shield");
 
   /**
    * Default constructor for the Orc class.

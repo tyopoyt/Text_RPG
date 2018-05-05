@@ -1,7 +1,6 @@
 package items;
 
-public class Key {
-  private String description;
+public class Key extends Tool {
 
 
   /**
@@ -9,18 +8,14 @@ public class Key {
    *
    * @param description Short description of the key's appearance
    */
-  public Key(String description){
-    this.description = description;
+  public Key(int weight, String description){
+    super(weight, description);
   }
 
   // GETTERS
 
-  /**
-   * Getter for the description of the key.
-   *
-   * @return the description of the key
-   */
-  public String getDescription() {
-    return description;
+  @Override
+  public void use() {
+
   }
 }

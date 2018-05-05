@@ -5,6 +5,7 @@ package items;
  */
 public abstract class Item{
   private int weight;
+  private String description;
   private boolean isWeapon;
   private boolean isTool;
 
@@ -14,10 +15,11 @@ public abstract class Item{
    * @param weight the item's weight
    * @param isWeapon is the item a weapon?
    */
-  public Item(int weight, boolean isWeapon, boolean isTool){
+  public Item(int weight, String description, boolean isWeapon, boolean isTool){
     this.weight = weight;
     this.isWeapon = isWeapon;
     this.isTool = isTool;
+    this.description = description;
   }
 
   /**

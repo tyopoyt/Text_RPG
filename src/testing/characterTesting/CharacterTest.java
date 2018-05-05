@@ -19,8 +19,8 @@ public class CharacterTest
 
   @Before
   public void setup() {
-    Sword leftItem = new Sword(12, 12, 2, 100);
-    Shield rightItem = new Shield(2, 18, 30, 100);
+    Sword leftItem = new Sword(12, 12, 2, 100, "Test");
+    Shield rightItem = new Shield(2, 18, 30, 100, "Test");
     character = new Character("Bob", 100, 100, 1, 12, 10, leftItem, rightItem);
   }
 

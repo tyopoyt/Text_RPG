@@ -13,8 +13,8 @@ public class Sword extends Weapon{
    * @param defense this shield's defense
    * @param acc this shield's accuracy
    */
-  public Sword(int damage, int weight, int defense, int acc){
-    super(weight, damage, defense, acc);
+  public Sword(int damage, int weight, int defense, int acc, String description){
+    super(weight, damage, defense, acc, description);
   }
 
   @Override

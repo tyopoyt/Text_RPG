@@ -5,7 +5,7 @@ import characters.Character;
 /**
  * A class representing a health potion.
  */
-public class HealthPotion extends Item
+public class HealthPotion extends Tool
 {
   private int heal;
 
@@ -14,12 +14,13 @@ public class HealthPotion extends Item
    *
    * @param heal the amount of health this potion can restore
    */
-  public HealthPotion(int heal){
-    super(0, false, true);
+  public HealthPotion(int heal, String description){
+    super(0, description);
     this.heal = heal;
   }
-  
-  public void use(Character c){
-    c.heal(heal);
+
+  @Override
+  public void use() {
+
   }
 }
