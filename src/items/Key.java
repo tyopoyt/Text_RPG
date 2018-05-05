@@ -1,5 +1,7 @@
 package items;
 
+import environments.Door;
+
 public class Key extends Tool {
 
 

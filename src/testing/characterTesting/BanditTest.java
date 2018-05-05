@@ -11,7 +11,6 @@ import static junit.framework.TestCase.assertNotNull;
  * A class to test the Bandit class.
  */
 public class BanditTest {
-
   private Bandit bandit;
 
   @Before
@@ -21,6 +20,6 @@ public class BanditTest {
 
   @Test
   public void testConstructor() {
-    System.out.println( bandit.toString());
+    bandit.toString();
   }
 }

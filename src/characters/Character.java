@@ -112,6 +112,8 @@ public class Character {
     return speed;
   }
 
+  public boolean isAlive(){ return alive; }
+
   // Experience Methods
 
   /**
