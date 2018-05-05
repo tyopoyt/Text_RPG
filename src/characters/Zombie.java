@@ -4,11 +4,16 @@ import items.Item;
 import items.Shield;
 import items.Sword;
 
-//ZOMBIE CHARACTER
+/**
+ * A class representing a Zombie.
+ */
 public class Zombie extends Character{
   private static final Item bite = new Sword(25, 0, 0, 20);
   private static final Item arms = new Shield(0, 0, 2, 0);
-  
+
+  /**
+   * Default constructor for the Zombie class.
+   */
   public Zombie(){
     super("Zombie", 100, 100, 4, 2, 30, bite, arms);
   }

@@ -4,7 +4,9 @@ import items.Item;
 import items.Shield;
 import items.Sword;
 
-//SKELETON CHARACTER
+/**
+ * A class representing a Skeleton
+ */
 public class Skeleton extends Character
 {
   private static final Item boneSword = new Sword(7, 0, 0, 56);
