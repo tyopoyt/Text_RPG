@@ -1,18 +1,15 @@
 package items;
 
 public class Key {
-  private final String KEYCODE;
   private String description;
 
 
   /**
    * Constructor for a key object.
    *
-   * @param CODE Code that will correspond with the door it unlocks
    * @param description Short description of the key's appearance
    */
-  public Key(String CODE, String description){
-    KEYCODE = CODE;
+  public Key(String description){
     this.description = description;
   }
 
