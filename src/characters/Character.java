@@ -29,6 +29,8 @@ public class Character {
    * @param level         the level of the character
    * @param inventorySize the inventory size of the character
    * @param speed         the speed of the character
+   * @param leftItem      the item to be equipped in the left hand
+   * @param rightItem     the item to be equipped in the right hand
    */
   public Character(String name, int health, int maxHealth, int level, int inventorySize, int speed,
                    Item leftItem, Item rightItem) {
