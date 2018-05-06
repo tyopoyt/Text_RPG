@@ -21,7 +21,7 @@ public class HealthPotion extends Tool
   }
 
   @Override
-  public void use() {
+  public void light() {
 
   }
 }

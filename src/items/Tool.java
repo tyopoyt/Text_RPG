@@ -15,6 +15,6 @@ public abstract class Tool extends Item {
   /**
    * Use this tool.
    */
-  public abstract void use();
+  public abstract void light();
 
 }

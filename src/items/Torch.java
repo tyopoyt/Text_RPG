@@ -18,9 +18,9 @@ public class Torch extends Tool {
   }
 
   /**
-   * Method to use the torch.
+   * Method to light the torch.
    */
-  public void use() {
+  public void light() {
     alight = true;
   }
 

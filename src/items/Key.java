@@ -18,7 +18,7 @@ public class Key extends Tool {
   // GETTERS
 
   @Override
-  public void use() {
+  public void light() {
 
   }
 }
