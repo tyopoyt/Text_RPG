@@ -27,6 +27,6 @@ public class SwordTest {
 
   @Test
   public void testToString() {
-    assertEquals("Weapon weighing: 10 with a damage of: 20", accurateSword.toString());
+    assertEquals("A sword weighing 10 lbs. with attack 20 \"Accurate Test Sword\"", accurateSword.toString());
   }
 }

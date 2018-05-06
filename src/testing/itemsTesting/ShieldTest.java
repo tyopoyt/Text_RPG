@@ -27,6 +27,6 @@ public class ShieldTest {
 
   @Test
   public void testToString() {
-    assertEquals("Weapon weighing: 7 with a damage of: 5", accurateShield.toString());
+    assertEquals("A shield weighing 7 lbs. with attack 5 \"Accurate Test Shield\"", accurateShield.toString());
   }
 }
