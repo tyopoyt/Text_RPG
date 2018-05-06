@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.ArrayList;
+
 public class Utils {
 
   /**
@@ -8,4 +10,6 @@ public class Utils {
   public enum Race {
     OGRE, HUMAN, ELF, HALFLING, INVALID;
   }
+
+  public ArrayList<Riddle> riddles;
 }
