@@ -1,5 +1,6 @@
 package testing.utilitiesTesting;
 
+import characters.Bandit;
 import org.junit.Before;
 import org.junit.Test;
 import utilities.Riddle;
@@ -10,11 +11,13 @@ import static org.junit.Assert.*;
 public class RiddlePuzzleTest {
 
   RiddlePuzzle rp;
+  Bandit bandit;
 
   @Before
   public void setUp() {
     Riddle r = new Riddle("This is a riddle?", "Yes that's correct");
     rp = new RiddlePuzzle("A RiddlePuzzle", r);
+    bandit = new Bandit();
   }
 
   @Test
@@ -31,5 +34,7 @@ public class RiddlePuzzleTest {
 
   @Test
   public void testGiveUp() {
+    rp.giveUp(bandit);
+    assertNotEquals(80, bandit.getHealth());
   }
 }

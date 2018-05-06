@@ -1,5 +1,7 @@
 package utilities;
 
+import characters.Character;
+
 public abstract class Puzzle {
   private boolean isSolved;
   private String description;

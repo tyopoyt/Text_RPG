@@ -1,5 +1,7 @@
 package utilities;
 
+import characters.Character;
+
 /**
  * A puzzle where the player must guess the correct answer.
  */

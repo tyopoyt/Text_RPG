@@ -1,5 +1,7 @@
 package utilities;
 
+import characters.Character;
+
 /**
  * Class for representing a math puzzle
  */
