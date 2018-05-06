@@ -5,15 +5,17 @@ import items.Key;
 public class Door {
   private Key key;
   private boolean isLocked;
+  private final String DESCRIPTION;
 
   /**
    * 1-arg constructor for a Door.
    *
    * @param key the key that unlocks this door
    */
-  public Door(Key key) {
+  public Door(Key key, String description) {
     this.key = key;
     isLocked = true;
+    DESCRIPTION = description;
   }
 
   /**
@@ -37,5 +39,21 @@ public class Door {
    */
   public boolean isLocked() {
     return isLocked;
+  }
+
+  /**
+   * Method to examine the door (serves as an accessor).
+   *
+   * @return description of the door
+   */
+  public String examine(){
+    StringBuilder sb = new StringBuilder();
+    sb.append(DESCRIPTION);
+    if(isLocked()){
+      sb.append(" The door is currently locked.");
+    }else{
+      sb.append(" The door is currently unlocked.");
+    }
+    return sb.toString();
   }
 }
