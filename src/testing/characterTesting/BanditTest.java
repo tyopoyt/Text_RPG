@@ -38,7 +38,7 @@ public class BanditTest {
   }
 
   @Test
-  public void testInteraction(){
+  public void testTakeDamage(){
     enemyBandit.takeDamage(enemyBandit.defend(bandit.attack()));
     assertEquals(55, enemyBandit.getHealth());
   }
