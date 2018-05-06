@@ -28,4 +28,8 @@ public abstract class Room {
     Collections.addAll(this.items, items);
     this.doors = doors;
   }
+
+  public void addItem(Item obj){
+    items.add(obj);
+  }
 }
