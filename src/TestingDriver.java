@@ -1,5 +1,3 @@
-package testing;
-
 import characters.*;
 import characters.Character;
 import environments.BossRoom;
@@ -7,13 +5,18 @@ import environments.Door;
 import items.*;
 import utilities.Utils;
 
+import java.io.IOException;
+
 public class TestingDriver {
   public static void main(String[] args) {
 
-    Utils utils = new Utils();
 
-    System.out.println(Utils.riddles.get(68));
-    System.out.println(Utils.riddles.size());
+
+      Utils utils = new Utils();
+
+      System.out.println(Utils.riddles.get(68));
+      System.out.println(Utils.riddles.size());
+
 
 
     /*Utils.Race race;
