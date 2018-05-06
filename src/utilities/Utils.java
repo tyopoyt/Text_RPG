@@ -37,13 +37,13 @@ public class Utils {
     sb = new StringBuilder();
     String temp;
     while (scan.hasNext()) {
-      temp = scan.nextLine();
-      sb.append(temp);
+      temp = scan.next();
+      sb.append(temp).append(" ");
       if (temp.endsWith("?")) {
+        scan.nextLine();
         riddles.add(new Riddle(sb.toString(), scan.nextLine()));
+        sb = new StringBuilder();
       }
     }
-
-    System.out.println(riddles);
   }
 }
