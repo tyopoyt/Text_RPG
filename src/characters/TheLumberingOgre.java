@@ -5,6 +5,8 @@ import items.Item;
 import items.Shield;
 import items.Sword;
 
+import java.util.Random;
+
 /**
  * Class for representing a boss: The Lumbering Ogre!
  */
@@ -17,7 +19,13 @@ public class TheLumberingOgre extends Character{
     super("The Lumbering Ogre", 150, 150, 6, 12, 15, OGRE_SWORD, OGRE_SHIELD);
   }
 
-  public void dropLoot(Room fightRoom){
+  public void testLootDrop(Room fightRoom){
+    if(new Random().nextInt(3) == 1){
+      dropLoot(fightRoom);
+    }
+  }
+
+  private void dropLoot(Room fightRoom){
     fightRoom.addItem(BROKEN_OGRE_SWORD);
   }
 }
