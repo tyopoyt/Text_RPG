@@ -13,8 +13,8 @@ public class BattleAxeTest {
 
   @Before
   public void setUp() {
-    accurateAxe = new BattleAxe(10,1,5,100, "Test BattleAxe");
-    inaccurateAxe = new BattleAxe(10,1,5,0, "Test BattleAxe");
+    accurateAxe = new BattleAxe(10,1,5,100, "Test BattleAxe","BattleAxe");
+    inaccurateAxe = new BattleAxe(10,1,5,0, "Test BattleAxe", "BattleAxe");
   }
 
   @Test

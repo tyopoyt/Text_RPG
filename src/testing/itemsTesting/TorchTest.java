@@ -16,7 +16,7 @@ public class TorchTest {
 
   @Test
   public void testLight() {
-    testTorch.light();
+    testTorch.use();
     assertTrue(testTorch.isAlight());
   }
 

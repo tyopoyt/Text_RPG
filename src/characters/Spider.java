@@ -7,7 +7,7 @@ import items.Sword;
  * A class representing a Spider.
  */
 public class Spider extends Character{
-  private static final Item BITE = new Sword(10, 0, 0, 90, "venomous fangs");
+  private static final Item BITE = new Sword(10, 0, 0, 90, "venomous fangs", "venomous Fangs");
 
   /**
    * Default constructor for the Spider class.

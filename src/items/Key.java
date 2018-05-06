@@ -11,14 +11,14 @@ public class Key extends Tool {
    * @param weight the weight of this Key
    * @param description Short description of the key's appearance
    */
-  public Key(int weight, String description){
-    super(weight, description);
+  public Key(int weight, String description, String name){
+    super(weight, description, name);
   }
 
   // GETTERS
 
   @Override
-  public void light() {
+  public void use() {
 
   }
 }

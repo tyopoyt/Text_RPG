@@ -10,8 +10,8 @@ public class TestingDriver {
   public static void main(String[] args) {
 
     Inventory inv = new Inventory(2);
-    inv.addItem(new Sword(12, 2, 2, 100, "A sword."));
-    inv.addItem(new Shield(2, 2, 12, 100, "A shield."));
+    inv.addItem(new Sword(12, 2, 2, 100, "A sword.", "Sword"));
+    inv.addItem(new Shield(2, 2, 12, 100, "A shield.", "Shield"));
 
     System.out.println(inv);
 

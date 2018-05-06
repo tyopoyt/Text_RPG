@@ -8,7 +8,7 @@ import items.Sword;
  */
 public class Slime extends Character
 {
-  private static final Item BASH = new Sword(5, 0, 0, 70, "the ability to bash");
+  private static final Item BASH = new Sword(5, 0, 0, 70, "the ability to bash", "ability to bash");
 
   /**
    * Default constructor for the Slime class.

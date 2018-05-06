@@ -15,8 +15,8 @@ public class SwordTest {
 
   @Before
   public void setUp(){
-    accurateSword = new Sword(20,10,5,100, "Accurate Test Sword");
-    inaccurateSword = new Sword(20,10,5,0, "Inaccurate Test Sword");
+    accurateSword = new Sword(20,10,5,100, "Accurate Test Sword", "Sword");
+    inaccurateSword = new Sword(20,10,5,0, "Inaccurate Test Sword", "Sword");
   }
 
   @Test

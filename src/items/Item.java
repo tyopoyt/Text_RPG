@@ -8,6 +8,7 @@ public abstract class Item{
   private final String DESCRIPTION;
   private final boolean IS_WEAPON;
   private final boolean IS_TOOL;
+  private final String NAME;
 
   /**
    * 2-arg constructor for an Item.
@@ -17,11 +18,12 @@ public abstract class Item{
    * @param description a description of this Item
    * @param isTool is this Item a tool?
    */
-  public Item(int weight, String description, boolean isWeapon, boolean isTool){
+  public Item(String name, int weight, String description, boolean isWeapon, boolean isTool){
     this.weight = weight;
     IS_WEAPON = isWeapon;
     IS_TOOL = isTool;
     DESCRIPTION = description;
+    NAME = name;
   }
 
   /**
@@ -40,6 +42,10 @@ public abstract class Item{
    */
   public boolean isWeapon() {
     return IS_WEAPON;
+  }
+
+  public String getName(){
+    return NAME;
   }
 
   /**

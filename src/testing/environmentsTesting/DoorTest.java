@@ -14,8 +14,8 @@ public class DoorTest {
 
   @Test
   public void testUnlock() {
-    Key key = new Key(1, "A test key.");
-    Key anotherKey = new Key(1, "The wrong key.");
+    Key key = new Key(1, "A test key.","key");
+    Key anotherKey = new Key(1, "The wrong key.","key");
     Door door = new Door(key);
 
     assertFalse(door.unlock(anotherKey));
@@ -24,7 +24,7 @@ public class DoorTest {
 
   @Test
   public void testIsLocked() {
-    Key key = new Key(1, "A test key.");
+    Key key = new Key(1, "A test key.","key");
     Door door = new Door(key);
 
     assertTrue(door.isLocked());
