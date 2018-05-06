@@ -1,10 +1,10 @@
 package utilities;
 
 public class RiddlePuzzle extends Puzzle{
-  private String riddle;
+  private Riddle riddle;
   private String[] answers;
 
-  public RiddlePuzzle(String description,String riddle, String[] answers){
+  public RiddlePuzzle(String description, Riddle riddle){
     super(description);
   }
 
