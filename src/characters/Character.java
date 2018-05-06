@@ -274,16 +274,16 @@ public class Character {
    * @return damage that the character should take
    */
   public int defend(int incomingDamage) {
-    int damage = 0;
+    int damage = incomingDamage;
     Item curItem;
     Iterator<Item> iter = equipped.iterator();
     while (iter.hasNext()) {
       curItem = iter.next();
       if (curItem.isWeapon()) {
-        damage += ((Weapon) curItem).block(incomingDamage);
+        damage -= ((Weapon) curItem).getDefense();
       }
     }
-    return damage;
+    return Math.max(damage, 0);
   }
 
   @Override

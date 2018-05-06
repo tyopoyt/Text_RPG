@@ -84,19 +84,7 @@ public abstract class Weapon extends Item {
     }
   }
 
-  /**
-   * Player blocks using the weapons that are equipped.
-   *
-   * @param incomingDamage the damage that is incoming to the character
-   * @return the damage the character should take
-   */
-  public int block(int incomingDamage) {
-    if (getDefense() >= incomingDamage)
-      damage = 0;
-    else
-      damage = incomingDamage - getDefense();
-    return damage;
-  }
+
 
   @Override
   public String toString() {

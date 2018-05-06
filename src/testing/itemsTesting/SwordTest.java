@@ -26,12 +26,6 @@ public class SwordTest {
   }
 
   @Test
-  public void testBlock(){
-    assertEquals(0, accurateSword.block(5));
-    assertEquals(10, inaccurateSword.block(15));
-  }
-
-  @Test
   public void testToString() {
     assertEquals("Weapon weighing: 10 with a damage of: 20", accurateSword.toString());
   }

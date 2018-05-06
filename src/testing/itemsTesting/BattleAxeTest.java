@@ -26,12 +26,6 @@ public class BattleAxeTest {
   }
 
   @Test
-  public void testBattleAxeBlock(){
-    int out = accurateAxe.block(5);
-    assertEquals(0, out);
-  }
-
-  @Test
   public void testBattleAxeIsTwoHanded(){
     assertTrue(accurateAxe.isTwoHanded());
   }
