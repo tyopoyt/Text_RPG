@@ -1,5 +1,6 @@
 package utilities;
 
+import environments.Room;
 import items.Item;
 
 import java.util.Iterator;
@@ -57,13 +58,12 @@ public class Inventory implements Iterable<Item> {
    * Drop an item from the player's inventory.
    *
    * @param index index of the item to drop
-   * @return the item to be dropped
+   * @param curRoom current Room the player is in
    */
-  public Item dropItem(int index) {
-    //TODO: actually drop the item
+  public void dropItem(int index, Room curRoom) {
     Item out = inventory[index];
     inventory[index] = null;
-    return out;
+    curRoom.addItem(out);
   }
 
   /**
