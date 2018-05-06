@@ -43,4 +43,8 @@ public abstract class Room {
   public ArrayList<Item> getItems(){
     return items;
   }
+
+  public String getDescription(){
+    return description;
+  }
 }
