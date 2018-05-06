@@ -24,7 +24,7 @@ public class MathPuzzle extends Puzzle {
   }
 
   @Override
-  public void giveUp() {
+  public void giveUp(Character actor) {
 
   }
 }

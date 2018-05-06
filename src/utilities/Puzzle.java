@@ -27,5 +27,5 @@ public abstract class Puzzle {
   /**
    * Give up on solving this puzzle.
    */
-  public abstract void giveUp();
+  public abstract void giveUp(Character actor);
 }
