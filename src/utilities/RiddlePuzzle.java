@@ -49,7 +49,7 @@ public class RiddlePuzzle extends Puzzle{
   @Override
   public void giveUp(Character actor){
     actor.takeDamage(30);
-    System.out.println("The correct answer was: " + riddle.answer());
+    System.out.println("The gods frown upon you, you suddenly feel a sharp pain in your head. You take 30 damage! The correct answer was: " + riddle.answer());
     solve();
   }
 }

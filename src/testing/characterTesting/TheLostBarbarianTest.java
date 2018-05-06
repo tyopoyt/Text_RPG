@@ -27,12 +27,16 @@ public class TheLostBarbarianTest {
     room1 = new BossRoom("Boss room test", boss, items, doors);
   }
 
+  /**
+   * This will also test the Item's examine properties.
+   */
   @Test
   public void testLootDrop() {
     TheLostBarbarian boss1v2 = ((TheLostBarbarian)boss[0]);
     boss1v2.dropLoot(room1);
     for (Item curItem : room1.getItems()) {
       System.out.println(curItem);
+      System.out.println(curItem.examine());
     }
     assertNotEquals(new ArrayList<Item>(), room1.getItems());
   }
