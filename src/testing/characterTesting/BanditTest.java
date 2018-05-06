@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
+import static junit.framework.TestCase.assertTrue;
 
 
 /**
@@ -28,13 +29,18 @@ public class BanditTest {
 
   @Test
   public void testDodge(){
-    assertNotNull(bandit.dodge(enemyBandit));
+    assertTrue(bandit.dodge(enemyBandit));
   }
 
   @Test
   public void testAttack(){
-    enemyBandit.takeDamage(enemyBandit.block(bandit.attack()));
-    assertEquals(55 , enemyBandit.getHealth());
+    assertEquals(30 , bandit.attack());
+  }
+
+  @Test
+  public void testInteraction(){
+    enemyBandit.takeDamage(enemyBandit.defend(bandit.attack()));
+    assertEquals(55, enemyBandit.getHealth());
   }
 
 }

@@ -9,7 +9,7 @@ import items.Sword;
  */
 public class Zombie extends Character{
   private static final Item BITE = new Sword(25, 0, 0, 20, "the ability to devour");
-  private static final Item ARMS = new Shield(0, 0, 2, 0, "arms");
+  private static final Item ARMS = new Shield(0, 0, 10, 0, "arms");
 
   /**
    * Default constructor for the Zombie class.

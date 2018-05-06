@@ -273,7 +273,7 @@ public class Character {
    * @param incomingDamage damage that is
    * @return damage that the character should take
    */
-  public int block(int incomingDamage) {
+  public int defend(int incomingDamage) {
     int damage = 0;
     Item curItem;
     Iterator<Item> iter = equipped.iterator();
