@@ -1,5 +1,6 @@
 package characters;
 
+import environments.Room;
 import items.Item;
 import items.Weapon;
 import utilities.Inventory;
@@ -183,8 +184,8 @@ public class Character {
    * @param index index of the item to be dropped
    * @return the item dropped
    */
-  public Item drop(int index) {
-    return inventory.dropItem(index);
+  public void drop(int index, Room curRoom) {
+    inventory.dropItem(index, curRoom);
   }
 
   // EQUPPING WEAPONS OR SHIELDS
