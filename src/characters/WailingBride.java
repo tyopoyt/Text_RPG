@@ -6,9 +6,9 @@ import items.*;
 import java.util.Random;
 
 public class WailingBride extends Character {
-  private final static Sword METAL_BOUQUET = new Sword(20,5,15,90,"a wilted bouquet of roses. Upon closer inspection, the roses are made of metal, thorny, vile, and are about a meter long!", "Metal Bouquet");
-  private final static Shield SHADOWY_VEIL = new Shield(5, 12,20,50,"a bride's veil, around it swirl the bride's screams of damnation.", "Shadowy Veil");
-  private final static Tool PILE_OF_ASHES = new Junk(2,"a pile of heavy ashes left after a grieving bride,", "Pile of ashes");
+  private final static Item METAL_BOUQUET = new Sword(20,5,15,90,"a wilted bouquet of roses. Upon closer inspection, the roses are made of metal, thorny, vile, and are about a meter long!", "Metal Bouquet");
+  private final static Item SHADOWY_VEIL = new Shield(5, 12,20,50,"a shield in the shape of a bride's veil, around it swirl the bride's screams of damnation.", "Shadowy Veil");
+  private final static Item PILE_OF_ASHES = new Junk(2,"a pile of heavy ashes left after a grieving bride,", "Pile of ashes");
 
   public WailingBride() {
     super("The Wailing Bride",125,125,8, 2, 90, METAL_BOUQUET, SHADOWY_VEIL);
