@@ -1,30 +1,58 @@
 package items;
 
-public class Torch {
+public class Torch extends Tool {
 
-  int lifeSpan;
+  private int life;
+  private boolean alight;
 
   /**
    * Torch constructor.
    *
-   * @param weight the weight of the torch
+   * @param weight      the weight of the torch
    * @param description the description of the torch
    */
-  public Torch(int weight, String description){
-
+  public Torch(int weight, String description) {
+    super(weight, description);
+    life = 10;
+    alight = false;
   }
 
   /**
    * Method to use the torch.
    */
-  public void use(){
-
+  public void use() {
+    alight = true;
   }
 
   /**
    * Method to extinguish the torch.
    */
-  public void extinguish(){
+  public void extinguish() {
+    alight = false;
+  }
 
+  /**
+   * Decrement life.
+   */
+  public void decreaseLife() {
+    life--;
+  }
+
+  /**
+   * Is the torch alight?
+   *
+   * @return status of torch being alight
+   */
+  public boolean isAlight() {
+    return alight;
+  }
+
+  /**
+   * Getter for the remaining life of the torch
+   *
+   * @return remaining life of Torch
+   */
+  public int getLifeRemaining() {
+    return life;
   }
 }
