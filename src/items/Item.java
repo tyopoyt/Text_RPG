@@ -51,6 +51,10 @@ public abstract class Item{
     return IS_TOOL;
   }
 
+  public String examine(){
+    return DESCRIPTION;
+  }
+
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();

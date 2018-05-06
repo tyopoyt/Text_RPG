@@ -238,7 +238,7 @@ public class Character {
     boolean success = false;
     if (player.getEquippedItem(1).isWeapon()) {
       Weapon current = (Weapon) (player.getEquippedItem(1));
-      if (current.getAccuracy() >= getSpeed()) {
+      if (((int)(Math.random()*100)) <= current.getAccuracy() && current.getAccuracy() >= getSpeed()) {
         success = false;
       } else {
         success = (int) (Math.random() * 3) < 3;

@@ -116,18 +116,20 @@ public class Inventory implements Iterable<Item> {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
+    String lastItem = "";
 
     if (inventory != null) {
       for (Item curItem : inventory) {
         if (curItem != null) {
           sb.append(curItem.toString());
           sb.append(", ");
+          lastItem = curItem.toString();
         }
       }
       if (sb.toString().contains(",")) {
         sb.replace(sb.lastIndexOf(","), sb.length(), ".\n");
         if (sb.toString().contains(",")) {
-          sb.replace(sb.lastIndexOf(","), (sb.lastIndexOf("A") + 1), " and a");
+          sb.replace(sb.lastIndexOf(","), (sb.lastIndexOf(lastItem) + 1), " and a");
         }
       }
     }
