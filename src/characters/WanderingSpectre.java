@@ -8,7 +8,7 @@ import items.Sword;
  */
 public class WanderingSpectre extends Character
 {
-  private static final Item WAIL = new Sword(6, 0, 0, 70, "the ability to let out a blood curdling wail");
+  private static final Item WAIL = new Sword(6, 0, 0, 70, "the ability to let out a blood curdling wail", "the ability to let out a blood curdling wail");
 
   /**
    * Default constructor for the WanderingSpectre class.

@@ -16,12 +16,12 @@ public class HealthPotion extends Tool
    * @param heal the amount of health this potion can restore
    */
   public HealthPotion(int heal, String description){
-    super(0, description);
+    super(0, description, "Health Potion");
     this.heal = heal;
   }
 
   @Override
-  public void light() {
+  public void use() {
 
   }
 }

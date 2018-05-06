@@ -15,8 +15,8 @@ public class ShieldTest {
 
   @Before
   public void setUp(){
-    accurateShield = new Shield(5,7,15,100,"Accurate Test Shield");
-    inaccurateShield = new Shield(5,7,15,0,"Inaccurate Test Shield");
+    accurateShield = new Shield(5,7,15,100,"Accurate Test Shield","Shield");
+    inaccurateShield = new Shield(5,7,15,0,"Inaccurate Test Shield", "Shield");
   }
 
   @Test

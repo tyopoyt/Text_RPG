@@ -20,8 +20,8 @@ public abstract class Weapon extends Item {
    * @param isTwoHanded is the weapon two-handed?
    */
   public Weapon(int weight, int damage, int defense, int accuracy, String description,
-                boolean isTwoHanded) {
-    super(weight, description, true, false);
+                boolean isTwoHanded, String name) {
+    super(name ,weight, description, true, false);
     this.damage = damage;
     this.defense = defense;
     this.accuracy = accuracy;

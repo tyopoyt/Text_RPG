@@ -8,8 +8,8 @@ import items.Sword;
  * A class representing a bandit.
  */
 public class Bandit extends Character{
-  private static final Item BROKEN_SWORD = new Sword(30, 0, 0, 75, "a broken sword, obviously a last resort");
-  private static final Item WOODEN_SHIELD = new Shield(0, 0, 5, 0, "a wooden shield");
+  private static final Item BROKEN_SWORD = new Sword(30, 0, 0, 75, "a broken sword, obviously a last resort", "Broken Sword");
+  private static final Item WOODEN_SHIELD = new Shield(0, 0, 5, 0, "a wooden shield", "Wooden Shield");
 
   /**
    * Default constructor for the Bandit class.

@@ -11,7 +11,7 @@ public class BattleAxe extends Weapon {
    * @param accuracy    the accuracy of hte battleaxe
    * @param description the description of the battleaxe
    */
-  public BattleAxe(int damage, int weight, int defense, int accuracy, String description) {
-    super(weight, damage, defense, accuracy, description, true);
+  public BattleAxe(int damage, int weight, int defense, int accuracy, String description, String name) {
+    super(weight, damage, defense, accuracy, description, true, name);
   }
 }
