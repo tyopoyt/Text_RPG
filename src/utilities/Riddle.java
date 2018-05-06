@@ -35,4 +35,10 @@ public class Riddle {
   public String answer() {
     return answer;
   }
+
+  @Override
+  public String toString() {
+    return text + " Answer: " + answer;
+  }
+
 }
