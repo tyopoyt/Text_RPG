@@ -91,9 +91,8 @@ public abstract class Weapon extends Item {
     StringBuilder sb = new StringBuilder();
     StringBuilder sb2 = new StringBuilder(this.getClass().toString());
     sb2.replace(0, sb2.toString().lastIndexOf(".") + 1, "");
-    sb.append("A ").append(sb2.toString().toLowerCase()).append(" weighing ")
-            .append(super.getWeight()).append(" lbs. with attack ").append(damage)
-            .append(" \"").append(examine()).append("\"");
+    sb.append(getName()).append(" - A ").append(sb2.toString().toLowerCase()).append(" weighing ")
+            .append(super.getWeight()).append(" lbs. with attack ").append(damage).append(".");
     return sb.toString();
   }
 }

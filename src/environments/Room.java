@@ -23,6 +23,8 @@ public abstract class Room {
    * @param doors doors in this room
    */
   public Room(String description, Character[] mobs, Item[] items, Door[] doors) {
+    this.mobs = new ArrayList<>();
+    this.items = new ArrayList<>();
     this.description = description;
     Collections.addAll(this.mobs, mobs);
     Collections.addAll(this.items, items);
@@ -31,5 +33,14 @@ public abstract class Room {
 
   public void addItem(Item obj){
     items.add(obj);
+  }
+
+  /**
+   * Accessor for items.
+   *
+   * @return items
+   */
+  public ArrayList<Item> getItems(){
+    return items;
   }
 }

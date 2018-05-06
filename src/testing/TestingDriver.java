@@ -1,19 +1,19 @@
 package testing;
 
-import items.Shield;
-import items.Sword;
-import utilities.Inventory;
-import utilities.Utils;
-import java.util.Random;
+import characters.*;
+import characters.Character;
+import environments.BossRoom;
+import environments.Door;
+import items.*;
 
 public class TestingDriver {
   public static void main(String[] args) {
 
-    Inventory inv = new Inventory(2);
+    /*Inventory inv = new Inventory(2);
     inv.addItem(new Sword(12, 2, 2, 100, "A sword.", "Sword"));
     inv.addItem(new Shield(2, 2, 12, 100, "A shield.", "Shield"));
 
-    System.out.println(inv);
+    System.out.println(inv);*/
 
 
     /*Utils.Race race;
@@ -40,5 +40,6 @@ public class TestingDriver {
       default:
         System.err.println("Oopsie 2");
     }*/
+
   }
 }

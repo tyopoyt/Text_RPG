@@ -65,7 +65,7 @@ public abstract class Item{
   public String toString() {
     StringBuilder sb = new StringBuilder();
     if (!IS_WEAPON) {
-      sb.append("Item weighing: ").append(weight);
+      sb.append(getName()).append(" - Weight: ").append(weight);
     }
     return sb.toString();
   }
