@@ -101,8 +101,10 @@ public abstract class Weapon extends Item {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("Weapon weighing: ").append(super.getWeight());
-    sb.append(" with a damage of: ").append(damage);
+    StringBuilder sb2 = new StringBuilder(this.getClass().toString());
+    sb2.replace(0, sb2.toString().lastIndexOf(".") + 1, "");
+    sb.append("A ").append(sb2.toString().toLowerCase()).append(" weighting ")
+            .append(super.getWeight()).append(" lbs. with attack ").append(damage);
     return sb.toString();
   }
 }

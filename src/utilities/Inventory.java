@@ -18,7 +18,7 @@ public class Inventory implements Iterable<Item> {
    */
   public Inventory(int size) {
     inventory = new Item[size];
-    this.size = size;
+    this.size = inventory.length;
   }
 
   /**
@@ -125,8 +125,10 @@ public class Inventory implements Iterable<Item> {
         }
       }
       if (sb.toString().contains(",")) {
-        sb.replace(sb.lastIndexOf(","), sb.length(), "\n");
-        sb.replace(sb.lastIndexOf(","), (sb.lastIndexOf("A") + 1), " and a");
+        sb.replace(sb.lastIndexOf(","), sb.length(), ".\n");
+        if (sb.toString().contains(",")) {
+          sb.replace(sb.lastIndexOf(","), (sb.lastIndexOf("A") + 1), " and a");
+        }
       }
     }
     if (sb.length() == 0) {

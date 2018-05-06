@@ -1,11 +1,22 @@
 package testing;
 
+import items.Shield;
+import items.Sword;
+import utilities.Inventory;
 import utilities.Utils;
 import java.util.Random;
 
 public class TestingDriver {
   public static void main(String[] args) {
-    Utils.Race race;
+
+    Inventory inv = new Inventory(2);
+    inv.addItem(new Sword(12, 2, 2, 100, "A sword."));
+    inv.addItem(new Shield(2, 2, 12, 100, "A shield."));
+
+    System.out.println(inv);
+
+
+    /*Utils.Race race;
 
     switch (new Random().nextInt(4)) {
       case 0: race = Utils.Race.OGRE; break;
@@ -28,6 +39,6 @@ public class TestingDriver {
         System.out.println("halfling"); break;
       default:
         System.err.println("Oopsie 2");
-    }
+    }*/
   }
 }
