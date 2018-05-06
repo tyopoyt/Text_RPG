@@ -20,11 +20,18 @@ public abstract class Puzzle {
   }
 
   /**
+   * Set the puzzle as solved.
+   */
+  public void solve() {
+    isSolved = true;
+  }
+
+  /**
    * Attempt to solve this puzzle.
    *
    * @return attempt status
    */
-  public abstract boolean attempt();
+  public abstract boolean attempt(Character actor);
 
   /**
    * Give up on solving this puzzle.

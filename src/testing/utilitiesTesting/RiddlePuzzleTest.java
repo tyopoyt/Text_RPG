@@ -23,13 +23,15 @@ public class RiddlePuzzleTest {
   @Test
   public void testAttempt() {
     rp.setInput("incorrect");
-    assertFalse(rp.attempt());
+    assertFalse(rp.attempt(bandit));
     rp.setInput("yes");
-    assertTrue(rp.attempt());
+    assertTrue(rp.attempt(bandit));
     rp.setInput("correct");
-    assertTrue(rp.attempt());
+    assertTrue(rp.attempt(bandit));
     rp.setInput("yes 987865765 correct");
-    assertTrue(rp.attempt());
+    assertTrue(rp.attempt(bandit));
+    rp.setInput("I gIve uP");
+    assertFalse(rp.attempt(bandit));
   }
 
   @Test

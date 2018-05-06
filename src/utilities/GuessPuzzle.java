@@ -23,7 +23,7 @@ public class GuessPuzzle extends Puzzle {
   }
 
   @Override
-  public boolean attempt() {
+  public boolean attempt(Character actor) {
     return false;
   }
 

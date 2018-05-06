@@ -32,7 +32,11 @@ public class RiddlePuzzle extends Puzzle{
   }
 
   @Override
-  public boolean attempt(){
+  public boolean attempt(Character actor) {
+    if (input.toLowerCase().equals("i give up")) {
+      giveUp(actor);
+      return false;
+    }
     Scanner inputScanner = new Scanner(input);
     while (inputScanner.hasNext()) {
       if (riddle.answer().toLowerCase().contains(inputScanner.next().toLowerCase())) {
@@ -45,5 +49,7 @@ public class RiddlePuzzle extends Puzzle{
   @Override
   public void giveUp(Character actor){
     actor.takeDamage(30);
+    System.out.println("The correct answer was: " + riddle.answer());
+    solve();
   }
 }
