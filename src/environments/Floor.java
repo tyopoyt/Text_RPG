@@ -4,18 +4,23 @@ package environments;
  * A class representing a floor in a dungeon.
  */
 public class Floor{
-  private Room[] roomsList;
+  private BeginningRoom [] beginningRoomsList;
+  private NormalRoom[] normalRoomsList;
+  private BossRoom[] bossRoomsList;
+  private TreasureRoom[] treasureRoomsList;
   private Room[][] level;
 
   /**
    * Default constructor for a floor.
    */
   public Floor(){
-    roomsList = new Room[40];
     populateRooms();
-    level = new Room[10][10];
+    level = new Room[5][5];
   }
 
+  public void generateFloor(){
+
+  }
   /**
    * Add enemies and items to the room.
    */
