@@ -8,6 +8,7 @@ public abstract class Item{
   private final String DESCRIPTION;
   private final boolean IS_WEAPON;
   private final boolean IS_TOOL;
+  private final boolean IS_STOREABLE;
   private final String NAME;
 
   /**
@@ -19,12 +20,13 @@ public abstract class Item{
    * @param isTool is this Item a tool?
    * @param name the Item's name
    */
-  public Item(String name, int weight, String description, boolean isWeapon, boolean isTool){
+  public Item(String name, int weight, String description, boolean isWeapon, boolean isTool, boolean isStoreable){
     this.weight = weight;
     IS_WEAPON = isWeapon;
     IS_TOOL = isTool;
     DESCRIPTION = description;
     NAME = name;
+    IS_STOREABLE = isStoreable;
   }
 
   /**
@@ -58,9 +60,23 @@ public abstract class Item{
     return IS_TOOL;
   }
 
+  /**
+   * Is the weapon able to be picked up?
+   *
+   * @return weather or not the item can be stored in inventory
+   */
+  public boolean isStoreable(){ return IS_STOREABLE; }
+
+  /**
+   * Examine the item
+   *
+   * @return description of the item
+   */
   public String examine(){
     return DESCRIPTION;
   }
+
+
 
   @Override
   public String toString() {

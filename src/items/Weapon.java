@@ -22,7 +22,7 @@ public abstract class Weapon extends Item {
    */
   public Weapon(int weight, int damage, int defense, int accuracy, String description,
                 boolean isTwoHanded, String name) {
-    super(name, weight, description, true, false);
+    super(name, weight, description, true, false, true);
     this.damage = damage;
     this.defense = defense;
     this.accuracy = accuracy;

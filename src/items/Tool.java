@@ -10,7 +10,7 @@ public abstract class Tool extends Item {
    * @param name        the name of the tool
    */
   public Tool(int weight, String description, String name) {
-    super(name, weight, description, false, true);
+    super(name, weight, description, false, true, true);
   }
 
   /**

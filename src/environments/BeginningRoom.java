@@ -16,5 +16,4 @@ public class BeginningRoom extends Room {
   public BeginningRoom(String description, Character[] mobs, Item[] items, Door[] doors){
     super(description, mobs, items, doors);
   }
-
 }

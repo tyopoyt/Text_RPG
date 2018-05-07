@@ -14,7 +14,7 @@ public class TestingDriver {
 
       Utils utils = new Utils();
 
-      System.out.println(Utils.riddles.get(68));
+      System.out.println(Utils.riddles.get(54));
       System.out.println(Utils.riddles.size());
 
 
