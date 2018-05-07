@@ -12,6 +12,7 @@ public class Shield extends Weapon {
    * @param defense     this shield's defense
    * @param acc         this shield's accuracy
    * @param description a description of this Shield
+   * @param name        the shield's name
    */
   public Shield(int damage, int weight, int defense, int acc, String description, String name) {
     super(weight, damage, defense, acc, description, false, name);

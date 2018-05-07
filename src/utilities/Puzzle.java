@@ -35,6 +35,8 @@ public abstract class Puzzle {
 
   /**
    * Give up on solving this puzzle.
+   *
+   * @param actor the character giving up
    */
   public abstract void giveUp(Character actor);
 }

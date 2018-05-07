@@ -196,7 +196,7 @@ public class Character {
    * Removes item from player's inventory.
    *
    * @param index index of the item to be dropped
-   * @return the item dropped
+   * @param curRoom the current room
    */
   public void drop(int index, Room curRoom) {
     inventory.dropItem(index, curRoom);

@@ -18,10 +18,11 @@ public abstract class Weapon extends Item {
    * @param accuracy    the accuracy of the weapon
    * @param description a description of the weapon
    * @param isTwoHanded is the weapon two-handed?
+   * @param name        The name of the Weapon
    */
   public Weapon(int weight, int damage, int defense, int accuracy, String description,
                 boolean isTwoHanded, String name) {
-    super(name ,weight, description, true, false);
+    super(name, weight, description, true, false);
     this.damage = damage;
     this.defense = defense;
     this.accuracy = accuracy;
@@ -85,7 +86,7 @@ public abstract class Weapon extends Item {
   }
 
   @Override
-  public String examine(){
+  public String examine() {
     StringBuilder sb = new StringBuilder();
     sb.append(super.examine()).append("\n\tDamage: ").append(getDamage()).append("\n\tDefense: ").append(getDefense());
     sb.append("\n\tAccuracy: ").append(getAccuracy());

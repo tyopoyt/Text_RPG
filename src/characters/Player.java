@@ -12,6 +12,9 @@ public class Player extends Character {
 
   /**
    * Constructor for player character
+   *
+   * @param name the name of the player
+   * @param race the race of the player
    */
   public Player(String name, Utils.Race race) {
     super(name, 100, 100, 0, 10, 60, null, null);

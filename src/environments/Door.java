@@ -11,6 +11,7 @@ public class Door {
    * 1-arg constructor for a Door.
    *
    * @param key the key that unlocks this door
+   * @param description the description of the door
    */
   public Door(Key key, String description) {
     this.key = key;

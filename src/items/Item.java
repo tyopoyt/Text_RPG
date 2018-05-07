@@ -17,6 +17,7 @@ public abstract class Item{
    * @param isWeapon is the item a weapon?
    * @param description a description of this Item
    * @param isTool is this Item a tool?
+   * @param name the Item's name
    */
   public Item(String name, int weight, String description, boolean isWeapon, boolean isTool){
     this.weight = weight;

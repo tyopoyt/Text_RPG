@@ -13,6 +13,7 @@ public class Sword extends Weapon {
    * @param defense     this sword's defense
    * @param acc         this sword's accuracy
    * @param description a description of the sword
+   * @param name        the sword's name
    */
   public Sword(int damage, int weight, int defense, int acc, String description, String name) {
     super(weight, damage, defense, acc, description, false, name);
