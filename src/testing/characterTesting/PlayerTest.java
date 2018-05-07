@@ -20,7 +20,7 @@ public class PlayerTest {
   public void setUp(){
     test2 = new Shield(5,5,15,80,"Shield 1", "Test Shield 1");
     HP1 = new HealthPotion(35, "Health Test 1");
-    item1 = new Torch(5, "Test Torch 1");
+    item1 = new Torch(5, "Test Torch 1", 10);
     p1 = new Player("Thomas Test", Utils.Race.OGRE);
     }
 

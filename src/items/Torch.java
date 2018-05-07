@@ -10,6 +10,7 @@ public class Torch extends Tool {
    *
    * @param weight      the weight of the torch
    * @param description the description of the torch
+   * @param life        the number of rooms the torch can be lit in before it goes out
    */
   public Torch(int weight, String description, int life) {
     super(weight, description, "A torch");

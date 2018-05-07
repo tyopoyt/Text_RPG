@@ -11,7 +11,7 @@ public class TorchTest {
 
   @Before
   public void setUp() {
-    testTorch = new Torch(100, "A bright Torch");
+    testTorch = new Torch(100, "A bright Torch", 10);
   }
 
   @Test
