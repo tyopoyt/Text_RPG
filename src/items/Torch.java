@@ -11,9 +11,9 @@ public class Torch extends Tool {
    * @param weight      the weight of the torch
    * @param description the description of the torch
    */
-  public Torch(int weight, String description) {
+  public Torch(int weight, String description, int life) {
     super(weight, description, "A torch");
-    life = 10;
+    this.life = life;
     alight = false;
   }
 

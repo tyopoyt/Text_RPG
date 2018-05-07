@@ -189,7 +189,11 @@ public class Character {
    */
   public void pickUp(Item obj) {
     //TODO: return boolean
-    inventory.addItem(obj);
+    if(obj.isStoreable()) {
+      inventory.addItem(obj);
+    } else {
+      //TODO: ERROR MESSAGE???
+    }
   }
 
   /**
