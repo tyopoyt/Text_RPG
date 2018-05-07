@@ -74,6 +74,13 @@ public class Player extends Character {
     return sb.toString();
   }
 
+
+  /**
+   * Method to search for, and subsequently examine an Item within the player's inventory.
+   *
+   * @param playerInput the String input of the player
+   * @return the description item or 'Item not found' if not found
+   */
   public String examineInventoryItem(String playerInput) {
     String search = playerInput.toLowerCase();
     StringBuilder sb = new StringBuilder();
