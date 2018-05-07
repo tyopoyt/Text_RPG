@@ -58,7 +58,11 @@ public class Player extends Character {
     StringBuilder sb = new StringBuilder();
     sb.append("-- Equipped: \n");
     for (Item curItem : checkEquipped()) {
-      sb.append(curItem.toString()).append("\n");
+      if(curItem != null) {
+        sb.append(curItem.toString()).append("\n");
+      } else {
+        sb.append("Empty \n");
+      }
     }
     sb.append("-- Inventory: \n");
     sb.append(getInventory().toString());

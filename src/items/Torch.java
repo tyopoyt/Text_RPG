@@ -12,7 +12,7 @@ public class Torch extends Tool {
    * @param description the description of the torch
    */
   public Torch(int weight, String description) {
-    super(weight, description, "A torch.");
+    super(weight, description, "A torch");
     life = 10;
     alight = false;
   }

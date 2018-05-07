@@ -122,17 +122,11 @@ public class Inventory implements Iterable<Item> {
       for (Item curItem : inventory) {
         if (curItem != null) {
           sb.append(curItem.toString());
-          sb.append(", ");
+          sb.append("\n");
           lastItem = curItem.toString();
         }
       }
-      if (sb.toString().contains(",")) {
-        sb.replace(sb.lastIndexOf(","), sb.length(), ".\n");
-        if (sb.toString().contains(",")) {
-          sb.replace(sb.lastIndexOf(","), (sb.lastIndexOf(lastItem) + 1), " and a");
-        }
       }
-    }
     if (sb.length() == 0) {
       sb.append("Empty!\n");
     }
