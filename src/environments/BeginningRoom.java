@@ -17,5 +17,4 @@ public class BeginningRoom extends Room {
     super(description, mobs, items, doors);
   }
 
-
 }

@@ -78,6 +78,13 @@ public class Character {
   }
 
   /**
+   * Sets maxHealth, (to only be called in player constructor due to race change).
+   *
+   * @param maxHealth the new maxHealth of the player
+   */
+  public void setMaxHealth(int maxHealth){ this.maxHealth = maxHealth; }
+
+  /**
    * Accessor for Level.
    *
    * @return level
@@ -112,6 +119,13 @@ public class Character {
   public int getSpeed() {
     return speed;
   }
+
+  /**
+   * Setter for speed. (to only be called in player constructor due to race change)
+   *
+   * @param speed the desired speed of the character.
+   */
+  public void setSpeed(int speed){ this.speed = speed; }
 
   public boolean isAlive(){ return alive; }
 
@@ -224,7 +238,7 @@ public class Character {
    * @return list of items equipped
    */
   public Item[] checkEquipped() {
-    return inventory.contents();
+    return equipped.contents();
   }
 
   // DODGE
