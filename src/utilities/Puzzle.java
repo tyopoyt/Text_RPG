@@ -30,6 +30,7 @@ public abstract class Puzzle {
    * Attempt to solve this puzzle.
    *
    * @return attempt status
+   * @param actor the character attempting to solve the puzzle
    */
   public abstract boolean attempt(Character actor);
 
