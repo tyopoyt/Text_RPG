@@ -3,6 +3,7 @@ package utilities;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,11 +26,12 @@ public class Utils {
   private void setUp() {
     StringBuilder sb = new StringBuilder();
     try {
-      FileInputStream inputStream = new FileInputStream(new File("src/utilities/riddles.txt"));
+      System.out.println(System.getProperty("user.dir"));
+      FileInputStream inputStream = new FileInputStream(new File(System.getProperty("user.dir") + "\\src\\utilities\\riddles.txt"));
       while (inputStream.available() > 0) {
         sb.append((char)inputStream.read());
       }
-    } catch (IOException e) {
+    } catch (IOException  e) {
       System.err.println(e.getMessage());
     }
 
