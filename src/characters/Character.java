@@ -303,10 +303,10 @@ public class Character {
 
   @Override
   public String toString() {
-    StringBuilder sb = new StringBuilder("Name: ");
-    sb.append(name).append("\n---- Stats ----\nHealth: ").append(health).append("\nSpeed: ");
-    sb.append(speed).append("\nLevel: ").append(level).append("\nInventory: ").append(inventory.toString());
-    sb.append("Equipped: ").append(equipped.toString());
+    StringBuilder sb = new StringBuilder("--Name: ");
+    sb.append(name).append("\n------ Stats ------\n--Health: ").append(health).append("\n--Speed: ");
+    sb.append(speed).append("\n--Level: ").append(level).append("\n--Inventory: \n").append(inventory.toString());
+    sb.append("--Equipped: \n").append(equipped.toString());
     return sb.toString();
   }
 }

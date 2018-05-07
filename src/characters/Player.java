@@ -54,6 +54,11 @@ public class Player extends Character {
 
   }
 
+  /**
+   * Viewable player inventory.
+   *
+   * @return string of players inventory
+   */
   public String checkInventory() {
     StringBuilder sb = new StringBuilder();
     sb.append("-- Equipped: \n");
@@ -66,6 +71,30 @@ public class Player extends Character {
     }
     sb.append("-- Inventory: \n");
     sb.append(getInventory().toString());
+    return sb.toString();
+  }
+
+  public String examineInventoryItem(String playerInput) {
+    String search = playerInput.toLowerCase();
+    StringBuilder sb = new StringBuilder();
+    for (Item curItem : checkEquipped()) {
+      if ((curItem != null) && ((curItem.getName().toLowerCase().contains(search)) || search.toLowerCase().contains(curItem.getName().toLowerCase()))) {
+        sb.append(curItem.getName()).append(" - ").append(curItem.examine());
+        return sb.toString();
+      }
+    }
+
+    sb.delete(0, sb.length());
+    for (Item curItem : getInventory().contents()) {
+      if ((curItem != null) && ((curItem.getName().toLowerCase().contains(search)) || search.toLowerCase().contains(curItem.getName().toLowerCase()))) {
+        sb.append(curItem.getName()).append(" - ").append(curItem.examine());
+        return sb.toString();
+      }
+    }
+
+    if(sb.length() == 0){
+      sb.append("Item not found.");
+    }
     return sb.toString();
   }
 }

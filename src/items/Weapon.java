@@ -84,6 +84,13 @@ public abstract class Weapon extends Item {
     }
   }
 
+  @Override
+  public String examine(){
+    StringBuilder sb = new StringBuilder();
+    sb.append(super.examine()).append("\n\tDamage: ").append(getDamage()).append("\n\tDefense: ").append(getDefense());
+    sb.append("\n\tAccuracy: ").append(getAccuracy());
+    return sb.toString();
+  }
 
 
   @Override
