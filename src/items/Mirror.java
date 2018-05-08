@@ -9,6 +9,6 @@ public class Mirror extends Item {
   }
 
   public String lookAt(){
-    return "It's you."
+    return "It's you.";
   }
 }
