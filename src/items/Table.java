@@ -60,6 +60,6 @@ public class Table extends Item {
         sb.append(curItem.getName()).append("\n\t");
       }
       }
-      return sb.toString();
+    return sb.toString();
   }
 }
