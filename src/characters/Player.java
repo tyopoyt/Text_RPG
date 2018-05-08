@@ -77,7 +77,6 @@ public class Player extends Character {
     return sb.toString();
   }
 
-
   /**
    * Method to search for, and subsequently examine an Item within the player's inventory.
    *
