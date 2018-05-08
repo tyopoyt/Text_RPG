@@ -59,4 +59,11 @@ public class Torch extends Tool {
   public int getLifeRemaining() {
     return life;
   }
+
+  @Override
+  public String toString(){
+    StringBuilder sb = new StringBuilder();
+    sb.append(super.toString()).append(" and a remaining lifetime of ").append(getLifeRemaining()).append(" rooms remaining.");
+    return sb.toString();
+  }
 }
