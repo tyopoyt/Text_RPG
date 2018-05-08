@@ -14,11 +14,11 @@ public class Table extends Item {
    *
    * @param name name of table
    * @param description description of table
-   * @param invSize inventory size of table
+   * @param numItems number of items on the table
    */
-  public Table(String name, String description, int invSize){
+  public Table(String name, String description, int numItems){
     super(name, 100, description, false,false,false);
-    tableTop = new Inventory(invSize);
+    tableTop = new Inventory(numItems);
   }
 
   /**
@@ -50,14 +50,14 @@ public class Table extends Item {
   @Override
   public String examine() {
     StringBuilder sb = new StringBuilder();
-    if(tableTop.size() > 1){
-      sb.append(" Atop the table sits a ");
+    if(tableTop.size() <= 1){
+      sb.append(super.examine()).append(" Atop the table sits a ");
     } else {
-      sb.append(super.examine()).append(" Atop the table sit: \n");
+      sb.append(super.examine()).append(" Atop the table sit: \n\t");
     }
     for (Item curItem : tableTop) {
       if (curItem != null) {
-        sb.append(curItem.getName()).append("\n");
+        sb.append(curItem.getName()).append("\n\t");
       }
       }
       return sb.toString();

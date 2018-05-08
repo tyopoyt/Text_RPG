@@ -14,7 +14,7 @@ public class TableTest {
 
   @Before
   public void setUp(){
-    table = new Table("A test table", "An old decrepit test table.", 2);
+    table = new Table("A test table", "An old decrepit test table.", 1);
     sword1 = new Sword(15,5,7,80, "DUMMY SWORD DESC.", "DUMMY SWORD");
     table.getTableTop().addItem(sword1);
   }
