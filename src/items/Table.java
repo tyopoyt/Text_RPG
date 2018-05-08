@@ -22,7 +22,7 @@ public class Table extends Item {
   }
 
   /**
-   * Examines an item on the table.
+   * Examines an item on the table without equipping it.
    *
    * @param name the object in question
    * @return description of the object
