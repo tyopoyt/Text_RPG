@@ -39,7 +39,7 @@ public class Torch extends Tool {
    * Decrement life.
    */
   public void decreaseLife() {
-    life--;
+    if(isAlight()) life--;
   }
 
   /**
