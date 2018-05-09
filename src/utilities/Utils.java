@@ -1,10 +1,7 @@
 package utilities;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -35,7 +32,7 @@ public class Utils {
       if (!file.canRead()) {
         file = new File(dir + "\\TextRPG_git.jar\\utilities\\riddles.txt");
       }*/
-      InputStream inputStream = getClass().getResourceAsStream("/utilities/riddles.txt");
+      InputStream inputStream = getClass().getResourceAsStream("/resources/riddles.txt");
 
 
       while (inputStream.available() > 0) {
