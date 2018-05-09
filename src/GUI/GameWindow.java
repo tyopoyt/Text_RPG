@@ -4,11 +4,17 @@ import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
 
+/**
+ * The GUI of the game.
+ */
 public class GameWindow extends JFrame {
 
   //static Toolkit tk = Toolkit.getDefaultToolkit();
   private static Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
 
+  /**
+   * Default constructor for a GameWindow.
+   */
   public GameWindow () {
     setLayout(new BorderLayout());
 
