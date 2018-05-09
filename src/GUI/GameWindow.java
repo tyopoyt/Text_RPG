@@ -34,6 +34,7 @@ public class GameWindow extends JFrame {
 
     console.setBorder(consoleBorder);
     console.setBackground(Color.BLACK);
+    console.setLineWrap(true);
 
     //Initialize input text area
     input = new JTextArea();
@@ -44,6 +45,7 @@ public class GameWindow extends JFrame {
 
     input.setBorder(inputBorder);
     input.setBackground(Color.BLACK);
+    input.setLineWrap(true);
 
     add(console, BorderLayout.NORTH);
     add(input, BorderLayout.SOUTH);
