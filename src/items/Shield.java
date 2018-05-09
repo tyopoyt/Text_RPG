@@ -1,9 +1,11 @@
 package items;
 
+import java.io.Serializable;
+
 /**
  * A class representing a shield.
  */
-public class Shield extends Weapon {
+public class Shield extends Weapon implements Serializable {
   /**
    * 5-arg constructor for a shield.
    *

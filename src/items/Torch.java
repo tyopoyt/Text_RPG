@@ -1,6 +1,8 @@
 package items;
 
-public class Torch extends Tool {
+import java.io.Serializable;
+
+public class Torch extends Tool implements Serializable {
 
   private int life;
   private boolean alight;

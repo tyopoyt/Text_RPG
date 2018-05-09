@@ -1,9 +1,11 @@
 package items;
 
+import java.io.Serializable;
+
 /**
  * An abstract class representing some sort of weapon.
  */
-public abstract class Weapon extends Item {
+public abstract class Weapon extends Item implements Serializable {
   private final boolean IS_TWO_HANDED;
   private int damage;
   private int defense;

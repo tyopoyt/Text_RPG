@@ -2,12 +2,13 @@ package utilities;
 
 import characters.Character;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  * A puzzle involving a riddle.
  */
-public class RiddlePuzzle extends Puzzle{
+public class RiddlePuzzle extends Puzzle implements Serializable {
   private Riddle riddle;
   private String input;
 

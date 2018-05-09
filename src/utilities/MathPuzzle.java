@@ -2,10 +2,12 @@ package utilities;
 
 import characters.Character;
 
+import java.io.Serializable;
+
 /**
  * Class for representing a math puzzle
  */
-public class MathPuzzle extends Puzzle {
+public class MathPuzzle extends Puzzle implements Serializable {
   private String mathPuzzle;
   private int answer;
 

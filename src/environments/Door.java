@@ -2,7 +2,9 @@ package environments;
 
 import items.Key;
 
-public class Door {
+import java.io.Serializable;
+
+public class Door implements Serializable {
   private Key key;
   private boolean isLocked;
   private final String DESCRIPTION;

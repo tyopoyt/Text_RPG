@@ -3,10 +3,12 @@ package characters;
 import items.Item;
 import utilities.Utils;
 
+import java.io.Serializable;
+
 /**
  * The player character.
  */
-public class Player extends Character {
+public class Player extends Character implements Serializable {
 
   private Utils.Race race;
 

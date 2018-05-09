@@ -1,6 +1,11 @@
 package items;
 
-public abstract class Tool extends Item {
+import java.io.Serializable;
+
+/**
+ * A tool.
+ */
+public abstract class Tool extends Item implements Serializable {
 
   /**
    * 2-arg constructor for a Tool.

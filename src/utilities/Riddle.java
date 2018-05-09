@@ -1,9 +1,11 @@
 package utilities;
 
+import java.io.Serializable;
+
 /**
  * A riddle.
  */
-public class Riddle {
+public class Riddle implements Serializable {
   private String text;
   private String answer;
 

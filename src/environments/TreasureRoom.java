@@ -3,10 +3,12 @@ package environments;
 import items.Item;
 import characters.Character;
 
+import java.io.Serializable;
+
 /**
  * Treasure rooms should contain much more items or better items.
  */
-public class TreasureRoom extends Room {
+public class TreasureRoom extends Room implements Serializable {
 
   /**
    * 4-arg constructor for a Treasure room.

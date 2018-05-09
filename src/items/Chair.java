@@ -1,9 +1,11 @@
 package items;
 
+import java.io.Serializable;
+
 /**
  * Class for a chair prop in a room.
  */
-public class Chair extends Item {
+public class Chair extends Item implements Serializable {
 
   /**
    * Constructor for a chair prop.

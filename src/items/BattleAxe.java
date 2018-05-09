@@ -1,6 +1,8 @@
 package items;
 
-public class BattleAxe extends Weapon {
+import java.io.Serializable;
+
+public class BattleAxe extends Weapon implements Serializable {
 
   /**
    * 5-arg BattleAxe Constuctor.

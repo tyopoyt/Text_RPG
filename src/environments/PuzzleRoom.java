@@ -4,10 +4,12 @@ import characters.Character;
 import items.Item;
 import utilities.Puzzle;
 
+import java.io.Serializable;
+
 /**
  * A room with a puzzle that must be solved before advancing.
  */
-public class PuzzleRoom extends Room {
+public class PuzzleRoom extends Room implements Serializable {
   private final Puzzle PUZZLE;
 
   /**

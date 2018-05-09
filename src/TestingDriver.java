@@ -15,6 +15,7 @@ public class TestingDriver {
   public static void main(String[] args) {
 
     Item[] items = {new Table("Torture Table", "A bloodied table.", 10)};
+    Door[] doors = {};
 
     BeginningRoom beginningTortureRoom = new BeginningRoom("You jolt awake, as if you had " +
             "been stabbed. Nothing around you is familiar, you sit in an uncomfortable wooden chair" +
@@ -33,7 +34,7 @@ public class TestingDriver {
             " yourself against it in an attempt to open it, it wont budge... You'll have to find the key! You turn" +
             " away from the door to see a small table in the back of the room, caked in dried blood and hair..." +
             "\nWhat will you do?",
-            items, null);
+            items, doors);
 
     File file = new File("src\\resources\\beginningTortureRoom.rm");
 

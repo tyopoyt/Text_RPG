@@ -5,12 +5,13 @@ import items.Item;
 import items.Weapon;
 import utilities.Inventory;
 
+import java.io.Serializable;
 import java.util.Iterator;
 
 /**
  * Class for character, Player or NPC.
  */
-public class Character {
+public class Character implements Serializable {
   private String name;
   private int health;
   private int maxHealth;

@@ -2,7 +2,9 @@ package utilities;
 
 import characters.Character;
 
-public abstract class Puzzle {
+import java.io.Serializable;
+
+public abstract class Puzzle implements Serializable {
   private boolean isSolved;
   private String description;
 

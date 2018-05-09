@@ -3,10 +3,12 @@ package characters;
 import items.Item;
 import items.Sword;
 
+import java.io.Serializable;
+
 /**
  * A class representing a Spider.
  */
-public class Spider extends Character{
+public class Spider extends Character implements Serializable {
   private static final Item BITE = new Sword(10, 0, 0, 90, "venomous fangs", "venomous Fangs");
 
   /**

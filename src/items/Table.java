@@ -2,10 +2,12 @@ package items;
 
 import utilities.Inventory;
 
+import java.io.Serializable;
+
 /**
  * Class for a table prop in a room
  */
-public class Table extends Item {
+public class Table extends Item implements Serializable {
 
   private Inventory tableTop;
 

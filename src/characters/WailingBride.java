@@ -3,9 +3,10 @@ package characters;
 import environments.Room;
 import items.*;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public class WailingBride extends Character {
+public class WailingBride extends Character implements Serializable {
   private final static Item METAL_BOUQUET = new Sword(20,5,15,90,"a wilted bouquet of roses. Upon closer inspection, the roses are made of metal, thorny, vile, and are about a meter long!", "Metal Bouquet");
   private final static Item SHADOWY_VEIL = new Shield(5, 12,20,50,"a shield in the shape of a bride's veil, around it swirl the bride's screams of damnation.", "Shadowy Veil");
   private final static Item PILE_OF_ASHES = new Junk(2,"a pile of heavy ashes left after a grieving bride,", "Pile of ashes");

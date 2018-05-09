@@ -3,12 +3,13 @@ package utilities;
 import environments.Room;
 import items.Item;
 
+import java.io.Serializable;
 import java.util.Iterator;
 
 /**
  * A class that represents a character's inventory
  */
-public class Inventory implements Iterable<Item> {
+public class Inventory implements Iterable<Item>, Serializable {
   private Item[] inventory;
   private int size;
 

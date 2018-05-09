@@ -1,8 +1,8 @@
 package items;
 
-import environments.Door;
+import java.io.Serializable;
 
-public class Key extends Tool {
+public class Key extends Tool implements Serializable {
 
 
   /**

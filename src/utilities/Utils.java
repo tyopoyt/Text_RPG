@@ -2,10 +2,11 @@ package utilities;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Utils {
+public class Utils implements Serializable {
 
   public static ArrayList<Riddle> riddles;
 

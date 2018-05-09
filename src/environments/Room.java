@@ -2,13 +2,15 @@ package environments;
 
 import characters.Character;
 import items.Item;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 
 /**
  * A class representing a room on a floor.
  */
-public abstract class Room {
+public abstract class Room implements Serializable {
   private String description;
   private ArrayList<Character> mobs;
   private ArrayList<Item> items;

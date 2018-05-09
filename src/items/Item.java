@@ -1,9 +1,11 @@
 package items;
 
+import java.io.Serializable;
+
 /**
  * An class representing some item that the player may obtain.
  */
-public abstract class Item{
+public abstract class Item implements Serializable {
   private int weight;
   private final String DESCRIPTION;
   private final boolean IS_WEAPON;

@@ -1,9 +1,11 @@
 package items;
 
+import java.io.Serializable;
+
 /**
  * Class for the Mirror Item
  */
-public class Mirror extends Item {
+public class Mirror extends Item implements Serializable {
 
   /**
    * Constructor for a mirror.

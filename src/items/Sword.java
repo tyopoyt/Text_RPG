@@ -1,9 +1,11 @@
 package items;
 
+import java.io.Serializable;
+
 /**
  * A class representing a Sword.
  */
-public class Sword extends Weapon {
+public class Sword extends Weapon implements Serializable {
 
   /**
    * 5-arg constructor for a sword.

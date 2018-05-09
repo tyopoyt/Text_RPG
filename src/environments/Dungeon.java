@@ -1,9 +1,11 @@
 package environments;
 
+import java.io.Serializable;
+
 /**
  * A class representing a dungeon through which the player will explore.
  */
-public class Dungeon {
+public class Dungeon implements Serializable {
   private Floor[] floors;
 
   /**

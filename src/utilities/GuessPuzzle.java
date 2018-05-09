@@ -2,10 +2,12 @@ package utilities;
 
 import characters.Character;
 
+import java.io.Serializable;
+
 /**
  * A puzzle where the player must guess the correct answer.
  */
-public class GuessPuzzle extends Puzzle {
+public class GuessPuzzle extends Puzzle implements Serializable {
   private String guessPuzzle;
   private String[] options;
   private int correctAns;

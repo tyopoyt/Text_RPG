@@ -1,6 +1,8 @@
 package items;
 
-public class Junk extends Tool {
+import java.io.Serializable;
+
+public class Junk extends Tool implements Serializable {
 
   public Junk(int weight, String description, String name){
     super(weight, description, name);
