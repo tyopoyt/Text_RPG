@@ -27,7 +27,7 @@ public class Table extends Item {
    * @param name the object in question
    * @return description of the object
    */
-  public String examineTableTopItem(String name){
+  public String examineTableTopItem(String name) {
     StringBuilder sb = new StringBuilder();
     for(Item curItem: tableTop.contents()){
       if(curItem != null && name.equalsIgnoreCase(curItem.getName())){

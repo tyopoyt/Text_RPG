@@ -9,11 +9,10 @@ public class BeginningRoom extends Room {
    * Constructs a Beginning Room
    *
    * @param description Description of the room
-   * @param mobs the mobs in the room
    * @param items the items in the room
    * @param doors the doors out of the room (corresponding to cardinal direction, 0 = west)
    */
-  public BeginningRoom(String description, Character[] mobs, Item[] items, Door[] doors){
-    super(description, mobs, items, doors);
+  public BeginningRoom(String description, Item[] items, Door[] doors){
+    super(description, null, items, doors);
   }
 }

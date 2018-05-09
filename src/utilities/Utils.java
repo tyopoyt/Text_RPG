@@ -3,6 +3,7 @@ package utilities;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -26,15 +27,23 @@ public class Utils {
   private void setUp() {
     StringBuilder sb = new StringBuilder();
     try {
-      System.out.println(System.getProperty("user.dir"));
-      FileInputStream inputStream = new FileInputStream(new File(System.getProperty("user.dir") + "\\src\\utilities\\riddles.txt"));
+      /*String dir = System.getProperty("user.dir");
+      File file;
+
+      file = new File(dir + "\\src\\utilities\\riddles.txt");
+
+      if (!file.canRead()) {
+        file = new File(dir + "\\TextRPG_git.jar\\utilities\\riddles.txt");
+      }*/
+      InputStream inputStream = getClass().getResourceAsStream("/utilities/riddles.txt");
+
+
       while (inputStream.available() > 0) {
         sb.append((char)inputStream.read());
       }
     } catch (IOException  e) {
       System.err.println(e.getMessage());
     }
-
     Scanner scan = new Scanner(sb.toString());
     sb = new StringBuilder();
     String temp;

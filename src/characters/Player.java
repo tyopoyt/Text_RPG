@@ -17,7 +17,7 @@ public class Player extends Character {
    * @param race the race of the player
    */
   public Player(String name, Utils.Race race) {
-    super(name, 100, 100, 0, 10, 60, null, null);
+    super(name, 100, 100, 0, 10, 70, null, null);
     this.race = race;
     switch(race){
       case OGRE: {
@@ -26,7 +26,7 @@ public class Player extends Character {
         setSpeed(50);
         break;
       } case ELF: {
-        setMaxHealth(125);
+        setMaxHealth(90);
         heal(getMaxHealth() - getHealth());
         setSpeed(75);
       } case HUMAN: {
