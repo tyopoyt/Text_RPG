@@ -47,6 +47,7 @@ public class Character implements Serializable {
     alive = true;
     equipMain(leftItem);
     equipSecondary(rightItem);
+
   }
 
   //GETTERS
